@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"BPB",
+		"PMP",
+		"CPC"
+	],
+	"key": {
+		"B": {
+			"item": "techreborn:bronze_plate"
+		},
+		"C": {
+			"item": "techreborn:electronic_circuit"
+		},
+		"P": {
+			"item": "techreborn:bronze_hoe"
+		},
+		"M": {
+			"item": "techreborn:basic_machine_frame"
+		}
+	},
+	"result": {
+		"item": "dragoncraftmachines:planter"
+	}
+}

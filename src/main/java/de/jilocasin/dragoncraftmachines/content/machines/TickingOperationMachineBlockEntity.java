@@ -1,0 +1,93 @@
+package de.jilocasin.dragoncraftmachines.content.machines;
+
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
+
+import de.jilocasin.dragoncraftmachines.DragoncraftMachinesMod;
+import de.jilocasin.dragoncraftmachines.content.DragoncraftMachine;
+import net.minecraft.block.BlockState;
+import net.minecraft.nbt.CompoundTag;
+import net.minecraft.util.math.Direction;
+
+public abstract class TickingOperationMachineBlockEntity extends AbstractMachineBlockEntity {
+
+	public static final Logger LOG = LogManager.getLogger(DragoncraftMachinesMod.NAMESPACE);
+
+	public TickingOperationMachineBlockEntity(final DragoncraftMachine machineType) {
+		super(machineType);
+	}
+
+	private int completedTicks = 0;
+
+	protected abstract double getEnergyPerOperation();
+
+	protected abstract int getTicksPerOperation();
+
+	protected abstract boolean couldPerformOperation();
+
+	protected abstract void performOperation();
+
+	private int getUpgradedTicksPerOperation() {
+		return (int) Math.round((1.0 - getSpeedMultiplier()) * getTicksPerOperation());
+	}
+
+	private double getUpgradedEnergyPerOperation() {
+		return getEnergyPerOperation() * getPowerMultiplier();
+	}
+
+	public void resetOperationProgress() {
+		completedTicks = 0;
+	}
+
+	public int getProgressScaled(final int scale) {
+		return ((completedTicks) * scale) / getUpgradedTicksPerOperation();
+	}
+
+	@Override
+	public CompoundTag toTag(final CompoundTag tag) {
+		super.toTag(tag);
+		tag.putInt("completedTicks", completedTicks);
+		return tag;
+	}
+
+	@Override
+	public void fromTag(final BlockState state, final CompoundTag tag) {
+		super.fromTag(state, tag);
+		completedTicks = tag.getInt("completedTicks");
+	}
+
+	@Override
+	public void tick() {
+		super.tick();
+
+		if (!isActive()) {
+			return;
+		}
+
+		final double energyPerTick = getUpgradedEnergyPerOperation() / getUpgradedTicksPerOperation();
+
+		if (canUseEnergy(energyPerTick)) {
+			if (couldPerformOperation()) {
+				useEnergy(energyPerTick);
+				completedTicks = (completedTicks + 1) % getUpgradedTicksPerOperation();
+
+				if (completedTicks == 0 && !world.isClient) {
+					performOperation();
+				}
+			} else {
+				resetOperationProgress();
+			}
+		}
+	}
+
+	@Override
+	public boolean canAcceptEnergy(final Direction direction) {
+		return true;
+	}
+
+	@Override
+	public boolean canProvideEnergy(final Direction direction) {
+		return false;
+	}
+
+}

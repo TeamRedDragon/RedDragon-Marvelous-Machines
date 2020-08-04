@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"BAB",
+		"CPC",
+		"BMB"
+	],
+	"key": {
+		"A": {
+			"item": "techreborn:bronze_pickaxe"
+		},
+		"B": {
+			"item": "techreborn:bronze_plate"
+		},
+		"C": {
+			"item": "techreborn:electronic_circuit"
+		},
+		"P": {
+			"item": "minecraft:piston"
+		},
+		"M": {
+			"item": "techreborn:basic_machine_frame"
+		}
+	},
+	"result": {
+		"item": "dragoncraftmachines:stone_breaker"
+	}
+}

@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"WBW",
+		"BMB",
+		"CBC"
+	],
+	"key": {
+		"B": {
+			"item": "minecraft:bone_block"
+		},
+		"C": {
+			"item": "techreborn:electronic_circuit"
+		},
+		"W": {
+			"item": "minecraft:water_bucket"
+		},
+		"M": {
+			"item": "techreborn:basic_machine_frame"
+		}
+	},
+	"result": {
+		"item": "dragoncraftmachines:fertilizer"
+	}
+}

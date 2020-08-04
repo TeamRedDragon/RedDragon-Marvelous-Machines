@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"facing=north,active=false": { "model": "dragoncraftmachines:block/harvester" },
+		"facing=south,active=false": { "model": "dragoncraftmachines:block/harvester", "y": 180 },
+		"facing=west,active=false":  { "model": "dragoncraftmachines:block/harvester", "y": 270 },
+		"facing=east,active=false":  { "model": "dragoncraftmachines:block/harvester", "y": 90 },
+		
+		"facing=north,active=true": { "model": "dragoncraftmachines:block/harvester_on" },
+		"facing=south,active=true": { "model": "dragoncraftmachines:block/harvester_on", "y": 180 },
+		"facing=west,active=true":  { "model": "dragoncraftmachines:block/harvester_on", "y": 270 },
+		"facing=east,active=true":  { "model": "dragoncraftmachines:block/harvester_on", "y": 90 }
+	}
+}

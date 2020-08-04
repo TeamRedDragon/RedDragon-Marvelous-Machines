@@ -1,0 +1,34 @@
+{
+	"schemaVersion": 1,
+	"id": "dragoncraft-machines",
+	"version": "${version}",
+	"name": "Dragoncraft Machines",
+	"description": "Adds some Tech Reborn compatible machines.",
+	"authors": [
+		"Jilocasin"
+	],
+	"contact": {
+		"homepage": "https://github.com/Jilocasin/Dragoncraft-Machines",
+		"sources": "https://github.com/Jilocasin/Dragoncraft-Machines"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/dragoncraftmachines/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"de.jilocasin.dragoncraftmachines.DragoncraftMachinesMod"
+		]
+	},
+	"mixins": [
+		"dragoncraftmachines.mixin.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.7.4",
+		"fabric": "*",
+		"minecraft": "1.16.x",
+		"techreborn": ">=3.4.4"
+	},
+	"suggests": {
+		"flamingo": "*"
+	}
+}

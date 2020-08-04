@@ -1,0 +1,17 @@
+{
+	"replace": false,
+	"values":
+	[
+		"minecraft:water",
+		"minecraft:flowing_water",
+		
+		"dragoncraftmachines:sewage",
+		"dragoncraftmachines:sewage_flowing",
+		
+		"dragoncraftmachines:sludge",
+		"dragoncraftmachines:sludge_flowing",
+		
+		"dragoncraftmachines:slurry",
+		"dragoncraftmachines:slurry_flowing"
+	]
+}

@@ -1,0 +1,25 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"PCP",
+		"GMG",
+		"CPC"
+	],
+	"key": {
+		"G": {
+			"item": "techreborn:diamond_saw_blade"
+		},
+		"C": {
+			"item": "techreborn:electronic_circuit"
+		},
+		"P": {
+			"item": "techreborn:steel_plate"
+		},
+		"M": {
+			"item": "techreborn:advanced_machine_frame"
+		}
+	},
+	"result": {
+		"item": "dragoncraftmachines:harvester"
+	}
+}

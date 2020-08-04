@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "dragoncraftmachines:block/mud_block"
+    },
+    "moisture=1": {
+      "model": "dragoncraftmachines:block/mud_block"
+    },
+    "moisture=2": {
+      "model": "dragoncraftmachines:block/mud_block"
+    },
+    "moisture=3": {
+      "model": "dragoncraftmachines:block/mud_block"
+    },
+    "moisture=4": {
+      "model": "dragoncraftmachines:block/mud_block"
+    },
+    "moisture=5": {
+      "model": "dragoncraftmachines:block/mud_block"
+    },
+    "moisture=6": {
+      "model": "dragoncraftmachines:block/mud_block"
+    },
+    "moisture=7": {
+      "model": "dragoncraftmachines:block/mud_block"
+    }
+  }
+}

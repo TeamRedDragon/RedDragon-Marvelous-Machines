@@ -1,0 +1,12 @@
+{
+	"required": true,
+	"minVersion": "0.8",
+	"package": "de.jilocasin.dragoncraftmachines.mixin",
+	"compatibilityLevel": "JAVA_8",
+	"mixins": [
+		"FlowableFluidAccessor"
+	],
+	"injectors": {
+		"defaultRequire": 1
+	}
+}
