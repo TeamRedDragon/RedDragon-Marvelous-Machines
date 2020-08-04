@@ -10,6 +10,7 @@ A fabric-based mod for Minecraft that adds a lot of farming related machine bloc
 * Water treatment plant: Allows recycling of sewage and other fluids to produce mud. Good for the environment!
 * Stone breaker: Allows building an automated cobblestone generator using water and lava.
 * Block breaker: A more advanced stone breaker! Allows breaking almost any block right in front of the machine. Use it wisely.
+* Color extractor: Allows to retrieve dye colors from processing blocks, such as recycling sand block to get yellow dye.
 
 # Part of the RedDragon mod pack
 Feel free to check our companion mods that are designed to work closely together:
