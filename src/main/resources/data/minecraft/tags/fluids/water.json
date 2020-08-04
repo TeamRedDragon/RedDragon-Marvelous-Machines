@@ -5,13 +5,13 @@
 		"minecraft:water",
 		"minecraft:flowing_water",
 		
-		"dragoncraftmachines:sewage",
-		"dragoncraftmachines:sewage_flowing",
+		"marvelousmachines:sewage",
+		"marvelousmachines:sewage_flowing",
 		
-		"dragoncraftmachines:sludge",
-		"dragoncraftmachines:sludge_flowing",
+		"marvelousmachines:sludge",
+		"marvelousmachines:sludge_flowing",
 		
-		"dragoncraftmachines:slurry",
-		"dragoncraftmachines:slurry_flowing"
+		"marvelousmachines:slurry",
+		"marvelousmachines:slurry_flowing"
 	]
 }

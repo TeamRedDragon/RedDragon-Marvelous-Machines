@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"facing=north,active=false": { "model": "marvelousmachines:block/planter" },
+		"facing=south,active=false": { "model": "marvelousmachines:block/planter", "y": 180 },
+		"facing=west,active=false":  { "model": "marvelousmachines:block/planter", "y": 270 },
+		"facing=east,active=false":  { "model": "marvelousmachines:block/planter", "y": 90 },
+		
+		"facing=north,active=true": { "model": "marvelousmachines:block/planter_on" },
+		"facing=south,active=true": { "model": "marvelousmachines:block/planter_on", "y": 180 },
+		"facing=west,active=true":  { "model": "marvelousmachines:block/planter_on", "y": 270 },
+		"facing=east,active=true":  { "model": "marvelousmachines:block/planter_on", "y": 90 }
+	}
+}

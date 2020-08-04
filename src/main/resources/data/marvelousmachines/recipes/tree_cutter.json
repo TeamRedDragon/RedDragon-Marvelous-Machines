@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"BAB",
+		"CPC",
+		"BMB"
+	],
+	"key": {
+		"A": {
+			"item": "techreborn:diamond_saw_blade"
+		},
+		"B": {
+			"item": "techreborn:steel_plate"
+		},
+		"C": {
+			"item": "techreborn:advanced_circuit"
+		},
+		"P": {
+			"item": "marvelousmachines:log_braker"
+		},
+		"M": {
+			"item": "techreborn:advanced_machine_frame"
+		}
+	},
+	"result": {
+		"item": "marvelousmachines:tree_cutter"
+	}
+}

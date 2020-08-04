@@ -1,0 +1,13 @@
+{
+	"variants": {
+		"facing=north,active=false": { "model": "marvelousmachines:block/water_treatment_plant" },
+		"facing=south,active=false": { "model": "marvelousmachines:block/water_treatment_plant", "y": 180 },
+		"facing=west,active=false":  { "model": "marvelousmachines:block/water_treatment_plant", "y": 270 },
+		"facing=east,active=false":  { "model": "marvelousmachines:block/water_treatment_plant", "y": 90 },
+		
+		"facing=north,active=true": { "model": "marvelousmachines:block/water_treatment_plant_on" },
+		"facing=south,active=true": { "model": "marvelousmachines:block/water_treatment_plant_on", "y": 180 },
+		"facing=west,active=true":  { "model": "marvelousmachines:block/water_treatment_plant_on", "y": 270 },
+		"facing=east,active=true":  { "model": "marvelousmachines:block/water_treatment_plant_on", "y": 90 }
+	}
+}

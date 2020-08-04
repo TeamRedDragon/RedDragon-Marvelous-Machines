@@ -1,8 +1,0 @@
-{
-	"parent": "minecraft:block/orientable",
-    "textures": {
-        "top": "dragoncraftmachines:block/base/tier1_machines/machine_top",
-        "front": "dragoncraftmachines:block/stone_breaker_front_off",
-        "side": "dragoncraftmachines:block/base/tier1_machines/machine_side"
-    }
-}2

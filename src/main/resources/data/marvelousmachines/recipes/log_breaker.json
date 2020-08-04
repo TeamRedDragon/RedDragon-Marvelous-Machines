@@ -1,0 +1,28 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"BAB",
+		"CPC",
+		"BMB"
+	],
+	"key": {
+		"A": {
+			"item": "minecraft:wooden_axe"
+		},
+		"B": {
+			"item": "techreborn:wood_plate"
+		},
+		"C": {
+			"item": "techreborn:electronic_circuit"
+		},
+		"P": {
+			"item": "minecraft:piston"
+		},
+		"M": {
+			"item": "techreborn:basic_machine_frame"
+		}
+	},
+	"result": {
+		"item": "marvelousmachines:log_braker"
+	}
+}

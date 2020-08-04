@@ -1,0 +1,19 @@
+ {
+  "type": "marvelousmachines:water_treatment_plant",
+  "power": 0,
+  "time": 200,
+  "tank": {
+    "fluid": "marvelousmachines:sludge",
+    "amount": 1000
+  },
+  "ingredients": [
+    {
+    }
+  ],
+  "results": [
+    {
+      "fluid": "techreborn:biofuel",
+      "amount": 100
+    }
+  ]
+}

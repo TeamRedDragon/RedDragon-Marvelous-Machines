@@ -1,0 +1,23 @@
+{
+	"itemGroup.marvelousmachines.item_group": "Meisterliche Maschinen",
+	"block.marvelousmachines.block_breaker": "Blockbrecher",
+	"block.marvelousmachines.color_extractor": "Farbextrahierer",
+	"block.marvelousmachines.fertilizer": "Düngermaschine",
+	"block.marvelousmachines.harvester": "Erntemaschine",
+	"block.marvelousmachines.log_breaker": "Stammbrecher",
+	"block.marvelousmachines.planter": "Pflanzmaschine",
+	"block.marvelousmachines.stone_breaker": "Steinbrecher",
+	"block.marvelousmachines.tree_cutter": "Baumfäller",
+	"block.marvelousmachines.water_treatment_plant": "Wasseraufbereitungsanlage",
+	
+	"block.marvelousmachines.mud_block": "Matsch",
+	
+	"block.marvelousmachines.sewage": "Abwasser",
+	"block.marvelousmachines.sludge": "Klärschlamm",
+	"block.marvelousmachines.slurry": "Gülle",
+	
+	"fluid.fluidsewage": "Abwasser",
+	"fluid.fluidsludge": "Klärschlamm",
+	"fluid.fluidslurry": "Gülle"
+	
+}

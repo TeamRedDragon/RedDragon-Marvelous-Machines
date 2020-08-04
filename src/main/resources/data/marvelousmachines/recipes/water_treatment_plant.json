@@ -1,0 +1,22 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"BEB",
+		"EME",
+		"BEB"
+	],
+	"key": {
+		"E": {
+			"item": "techreborn:extractor"
+		},
+		"B": {
+			"item": "techreborn:steel_plate"
+		},
+		"M": {
+			"item": "techreborn:advanced_machine_frame"
+		}
+	},
+	"result": {
+		"item": "marvelousmachines:water_treatment_plant"
+	}
+}

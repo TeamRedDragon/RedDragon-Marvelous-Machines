@@ -1,0 +1,37 @@
+{
+	"type": "minecraft:crafting_shaped",
+	"pattern": [
+		"LEM",
+		"BMO",
+		"GEP"
+	],
+	"key": {
+		"L": {
+			"item": "minecraft:lime_dye"
+		},
+		"E": {
+			"item": "techreborn:extractor"
+		},
+		"M": {
+			"item": "minecraft:magenta_dye"
+		},
+		"B": {
+			"item": "minecraft:light_blue_dye"
+		},
+		"O": {
+			"item": "minecraft:orange_dye"
+		},
+		"G": {
+			"item": "minecraft:light_gray_dye"
+		},
+		"P": {
+			"item": "minecraft:pink_dye"
+		},
+		"M": {
+			"item": "techreborn:advanced_machine_frame"
+		}
+	},
+	"result": {
+		"item": "marvelousmachines:color_extractor"
+	}
+}

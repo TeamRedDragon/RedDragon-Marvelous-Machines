@@ -1,26 +1,26 @@
 {
 	"schemaVersion": 1,
-	"id": "dragoncraft-machines",
+	"id": "marvelousmachines",
 	"version": "${version}",
-	"name": "Dragoncraft Machines",
-	"description": "Adds some Tech Reborn compatible machines.",
+	"name": "RedDragon Marvelous Machines",
+	"description": "Adds a lot of farming related machine blocks, aiming to further extend the machines available by Tech Reborn.",
 	"authors": [
-		"Jilocasin"
+		"TeamRedDragon"
 	],
 	"contact": {
-		"homepage": "https://github.com/Jilocasin/Dragoncraft-Machines",
-		"sources": "https://github.com/Jilocasin/Dragoncraft-Machines"
+		"homepage": "https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines",
+		"sources": "https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines"
 	},
-	"license": "CC0-1.0",
-	"icon": "assets/dragoncraftmachines/icon.png",
+	"license": "MMPLv2",
+	"icon": "assets/marvelousmachines/icon.png",
 	"environment": "*",
 	"entrypoints": {
 		"main": [
-			"de.jilocasin.dragoncraftmachines.DragoncraftMachinesMod"
+			"reddragon.marvelousmachines.MarvelousMachinesMod"
 		]
 	},
 	"mixins": [
-		"dragoncraftmachines.mixin.json"
+		"marvelousmachines.mixin.json"
 	],
 	"depends": {
 		"fabricloader": ">=0.7.4",

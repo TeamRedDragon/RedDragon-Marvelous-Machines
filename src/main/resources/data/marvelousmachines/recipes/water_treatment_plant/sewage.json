@@ -1,0 +1,22 @@
+ {
+  "type": "marvelousmachines:water_treatment_plant",
+  "power": 0,
+  "time": 200,
+  "tank": {
+    "fluid": "marvelousmachines:sewage",
+    "amount": 1000
+  },
+  "ingredients": [
+    {
+    }
+  ],
+  "results": [
+    {
+      "fluid": "marvelousmachines:sludge",
+      "amount": 1000
+    },
+    {
+      "item": "marvelousmachines:mud_block"
+    }
+  ]
+}

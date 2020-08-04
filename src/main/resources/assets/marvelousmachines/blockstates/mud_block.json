@@ -1,0 +1,28 @@
+{
+  "variants": {
+    "moisture=0": {
+      "model": "marvelousmachines:block/mud_block"
+    },
+    "moisture=1": {
+      "model": "marvelousmachines:block/mud_block"
+    },
+    "moisture=2": {
+      "model": "marvelousmachines:block/mud_block"
+    },
+    "moisture=3": {
+      "model": "marvelousmachines:block/mud_block"
+    },
+    "moisture=4": {
+      "model": "marvelousmachines:block/mud_block"
+    },
+    "moisture=5": {
+      "model": "marvelousmachines:block/mud_block"
+    },
+    "moisture=6": {
+      "model": "marvelousmachines:block/mud_block"
+    },
+    "moisture=7": {
+      "model": "marvelousmachines:block/mud_block"
+    }
+  }
+}

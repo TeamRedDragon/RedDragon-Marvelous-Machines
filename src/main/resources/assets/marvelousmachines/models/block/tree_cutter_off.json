@@ -1,0 +1,8 @@
+{
+	"parent": "minecraft:block/orientable",
+    "textures": {
+        "top": "marvelousmachines:block/base/tier2_machines/machine_top",
+        "front": "marvelousmachines:block/stone_breaker_front_off",
+        "side": "marvelousmachines:block/base/tier2_machines/machine_side"
+    }
+}

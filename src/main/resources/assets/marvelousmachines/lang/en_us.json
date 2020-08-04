@@ -1,0 +1,24 @@
+{
+	"itemGroup.marvelousmachines.item_group": "Marvelous Machines",
+	"block.marvelousmachines.block_breaker": "Block breaker",
+	"block.marvelousmachines.color_extractor": "Color extractor",
+	"block.marvelousmachines.fertilizer": "Fertilizer",
+	"block.marvelousmachines.harvester": "Harvester",
+	"block.marvelousmachines.log_breaker": "Log breaker",
+	"block.marvelousmachines.planter": "Planter",
+	"block.marvelousmachines.stone_breaker": "Stone breaker",
+	"block.marvelousmachines.tree_cutter": "Tree cutter",
+	"block.marvelousmachines.water_treatment_plant": "Water treatment plant",
+	
+	"block.marvelousmachines.mud_block": "Mud",
+	
+	"block.marvelousmachines.sewage": "Sewage",
+	"block.marvelousmachines.sludge": "Sludge",
+	"block.marvelousmachines.slurry": "Slurry",
+	
+	"fluid.fluidsewage": "Sewage",
+	"fluid.fluidsludge": "Sludge",
+	"fluid.fluidslurry": "Slurry"
+	
+
+}
