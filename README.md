@@ -11,7 +11,7 @@ A fabric-based mod for Minecraft that adds a lot of farming related machine bloc
 * Stone breaker: Allows building an automated cobblestone generator using water and lava.
 * Block breaker: A more advanced stone breaker! Allows breaking almost any block right in front of the machine. Use it wisely.
 
-# Part of the RedDragon bundle
+# Part of the RedDragon mod pack
 Feel free to check our companion mods that are designed to work closely together:
 
 * RedDragon Gorgeous Greens
