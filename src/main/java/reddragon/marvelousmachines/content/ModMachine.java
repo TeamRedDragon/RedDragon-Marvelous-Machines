@@ -11,6 +11,7 @@ import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
 import reborncore.RebornRegistry;
+import reddragon.api.content.BlockHolder;
 import reddragon.marvelousmachines.MarvelousMachinesMod;
 import reddragon.marvelousmachines.content.machines.AbstractMachineBlock;
 import reddragon.marvelousmachines.content.machines.AbstractMachineBlockEntity;

@@ -12,6 +12,7 @@ import net.minecraft.item.Item;
 import net.minecraft.sound.BlockSoundGroup;
 import net.minecraft.util.Identifier;
 import reborncore.RebornRegistry;
+import reddragon.api.content.BlockHolder;
 import reddragon.marvelousmachines.MarvelousMachinesMod;
 import reddragon.marvelousmachines.content.blocks.MudBlock;
 
