@@ -26,8 +26,7 @@ Feel free to check our companion mods that are designed to work closely together
 
 To run this mod you need the following mod dependencies:
 
-* [RedDragon API](https://github.com/TeamRedDragon/RedDragon-API)
-* [RebornCore](https://github.com/TechReborn/RebornCore)
+* [Tech Reborn](https://github.com/TechReborn/TechReborn) 3.4.5 or newer
 
 This mod also requires the [Fabric mod loader](https://fabricmc.net/use/). Please check the [Fabric documentation](https://fabricmc.net/wiki/install) for more details.
 
