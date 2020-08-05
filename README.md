@@ -25,3 +25,7 @@ Feel free to check our companion mods that are designed to work closely together
 To run this mod you need to have the following dependencies:
 
 * [RebornCore](https://github.com/TechReborn/RebornCore)
+
+## Disclaimer
+
+* This is NOT AN OFFICIAL MINECRAFT PRODUCT. This is NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
