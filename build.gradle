@@ -19,13 +19,14 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	modApi 'reddragon:RedDragon-API:1.0.0'
-
-	def rcVersion = 'RebornCore:RebornCore-1.16:4.3.3+build.61'
-	modApi (rcVersion) {
+	def redDragonApiVersion = 'reddragon:RedDragon-API:1.0.0'
+	modApi redDragonApiVersion
+    include redDragonApiVersion
+    
+	def techRebornVersion = 'TechReborn:TechReborn-1.16:3.4.5+build.88'
+	modApi (techRebornVersion) {
 		exclude group: "net.fabricmc.fabric-api"
 	}
-	include rcVersion
 	
 	modApi 'teamreborn:energy:0.1.0'
 }
