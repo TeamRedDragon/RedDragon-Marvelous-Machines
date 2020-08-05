@@ -24,16 +24,16 @@ Feel free to check our companion mods that are designed to work closely together
 
 # Dependencies
 
-To run this mod you need the following dependencies:
+To run this mod you need the following mod dependencies:
 
 * [RedDragon API](https://github.com/TeamRedDragon/RedDragon-API)
 * [RebornCore](https://github.com/TechReborn/RebornCore)
 
+This mod also requires the [Fabric mod loader](https://fabricmc.net/use/). Please check the [Fabric documentation](https://fabricmc.net/wiki/install) for more details.
+
 # Installation
 
 Download a matching [release build](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/releases) for your Minecraft version and drop the `reddragon-marvelousmachines.jar` file into your Minecraft `mods` folder.
-
-This mod requires the [Fabric mod loader](https://fabricmc.net/use/). Please check the [Fabric documentation](https://fabricmc.net/wiki/install) for more details.
 
 # Disclaimer
 
