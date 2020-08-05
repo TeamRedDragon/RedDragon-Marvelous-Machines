@@ -22,10 +22,10 @@ Feel free to check our companion mods that are designed to work closely together
 
 ## Dependencies
 
-To run this mod you need to have the following dependencies:
+To run this mod you need the following dependencies:
 
 * [RebornCore](https://github.com/TechReborn/RebornCore)
-* [RedDragon API](https://github.com/TeamRedDragon/RedDragonAPI)
+* [RedDragon API](https://github.com/TeamRedDragon/RedDragon-API)
 
 ## Disclaimer
 
