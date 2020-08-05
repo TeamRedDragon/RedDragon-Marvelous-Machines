@@ -28,7 +28,7 @@ To run this mod you need the following mod dependency:
 
 * [Tech Reborn](https://github.com/TechReborn/TechReborn) (3.4.5 or newer)
 
-Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check the [Fabric documentation](https://fabricmc.net/wiki/install) for more details.
+Keep in mind that this mod also require the [Fabric mod loader](https://fabricmc.net/use/). Please check [Installing Fabric](https://fabricmc.net/wiki/install) for more details.
 
 # Installation
 
