@@ -15,17 +15,17 @@ A fabric-based mod for Minecraft that adds a lot of farming related machine bloc
 # Part of the RedDragon mod pack
 Feel free to check our companion mods that are designed to work closely together:
 
-* RedDragon Gorgeous Greens
-* [RedDragon Nutritious Noms](https://github.com/SophiaAska/RedDragon-Nutritious-Noms)
-* RedDragon Food Factory
+* [RedDragon Gorgeous Greens](https://github.com/TeamRedDragon/RedDragon-Gorgeous-Greens)
+* [RedDragon Nutritious Noms](https://github.com/TeamRedDragon/RedDragon-Nutritious-Noms)
+* [RedDragon Food Factory](https://github.com/TeamRedDragon/RedDragon-Food-Factory)
 * **RedDragon Marvelous Machines**
 
 ## Dependencies
 
 To run this mod you need the following dependencies:
 
-* [RebornCore](https://github.com/TechReborn/RebornCore)
 * [RedDragon API](https://github.com/TeamRedDragon/RedDragon-API)
+* [RebornCore](https://github.com/TechReborn/RebornCore)
 
 ## Disclaimer
 
