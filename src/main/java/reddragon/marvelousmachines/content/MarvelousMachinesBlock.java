@@ -7,17 +7,22 @@ import net.minecraft.block.Material;
 import net.minecraft.sound.BlockSoundGroup;
 import reddragon.api.configs.ModBlockConfig;
 import reddragon.api.content.BlockHolder;
+import reddragon.marvelousmachines.content.blocks.MudBlock;
 
 public enum MarvelousMachinesBlock implements BlockHolder {
-	MUD_BLOCK(FabricBlockSettings.of(Material.SOLID_ORGANIC)
+	MUD_BLOCK(new MudBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC)
 			.strength(1.2f, 5.0f)
 			.slipperiness(0.985f)
 			.sounds(BlockSoundGroup.SLIME)
 			.breakByTool(FabricToolTags.SHOVELS)
 			.breakByHand(true)
-			.ticksRandomly());
+			.ticksRandomly()));
 
 	private final ModBlockConfig config;
+
+	private MarvelousMachinesBlock(final Block block) {
+		config = new ModBlockConfig(block);
+	}
 
 	private MarvelousMachinesBlock(final ModBlockConfig config) {
 		this.config = config;
