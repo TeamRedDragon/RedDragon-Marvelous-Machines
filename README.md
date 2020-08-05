@@ -36,4 +36,4 @@ Download a matching [release build](https://github.com/TeamRedDragon/RedDragon-M
 
 # Disclaimer
 
-* This is NOT AN OFFICIAL MINECRAFT PRODUCT. This is NOT APPROVED BY OR ASSOCIATED WITH MOJANG.
+This is not an official Minecraft product. This is not approved by or associated with Mojang.
