@@ -24,14 +24,6 @@ public enum MarvelousMachinesBlock implements BlockHolder {
 		config = new ModBlockConfig(block);
 	}
 
-	private MarvelousMachinesBlock(final ModBlockConfig config) {
-		this.config = config;
-	}
-
-	private MarvelousMachinesBlock(FabricBlockSettings settings) {
-		config = new ModBlockConfig(settings);
-	}
-
 	@Override
 	public Block getBlock() {
 		return config.getBlock();

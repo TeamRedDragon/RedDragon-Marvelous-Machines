@@ -7,13 +7,13 @@ import net.minecraft.block.BlockState;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.util.math.Direction;
 import reddragon.marvelousmachines.MarvelousMachinesMod;
-import reddragon.marvelousmachines.content.ModMachine;
+import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
 
 public abstract class TickingOperationMachineBlockEntity extends AbstractMachineBlockEntity {
 
 	public static final Logger LOG = LogManager.getLogger(MarvelousMachinesMod.NAMESPACE);
 
-	public TickingOperationMachineBlockEntity(final ModMachine machineType) {
+	public TickingOperationMachineBlockEntity(final MarvelousMachinesMachine machineType) {
 		super(machineType);
 	}
 

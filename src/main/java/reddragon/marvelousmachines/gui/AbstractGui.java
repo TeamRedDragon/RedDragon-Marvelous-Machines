@@ -26,11 +26,11 @@ import reborncore.api.blockentity.IMachineGuiHandler;
 import reborncore.client.screen.BuiltScreenHandlerProvider;
 import reborncore.client.screen.builder.BuiltScreenHandler;
 import reddragon.marvelousmachines.MarvelousMachinesMod;
-import reddragon.marvelousmachines.content.ModMachine;
+import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
 
 public final class AbstractGui<T extends BlockEntity> implements IMachineGuiHandler {
 	public static <T extends BlockEntity> AbstractGui<T> register(
-			final ModMachine machineType,
+			final MarvelousMachinesMachine machineType,
 			final Supplier<Supplier<GuiFactory<T>>> factorySupplierMeme) {
 		final Identifier identifier = new Identifier(MarvelousMachinesMod.NAMESPACE,
 				machineType.name().toLowerCase(Locale.ROOT));

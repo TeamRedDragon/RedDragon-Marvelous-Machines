@@ -29,7 +29,7 @@ import reddragon.marvelousmachines.gui.AbstractGui.GuiFactory;
  * All machines have a corresponding block, block entity and a GUI
  * implementation.
  */
-public enum ModMachine implements BlockHolder {
+public enum MarvelousMachinesMachine implements BlockHolder {
 	STONE_BREAKER(StoneBreakerBlock::new, StoneBreakerBlockEntity::new, StoneBreakerGui::new);
 
 	private AbstractMachineBlock block;
@@ -38,7 +38,7 @@ public enum ModMachine implements BlockHolder {
 
 	private BlockEntityType<?> blockEntityType;
 
-	private ModMachine(
+	private MarvelousMachinesMachine(
 			final BlockSupplier blockSupplier,
 			final BlockEntitySupplier blockEntitySupplier,
 			final GuiFactory<? extends AbstractMachineBlockEntity> guiSupplier) {

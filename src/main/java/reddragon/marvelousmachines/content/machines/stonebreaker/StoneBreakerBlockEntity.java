@@ -19,7 +19,7 @@ import reborncore.client.screen.builder.BuiltScreenHandler;
 import reborncore.client.screen.builder.ScreenHandlerBuilder;
 import reborncore.common.util.ItemUtils;
 import reborncore.common.util.RebornInventory;
-import reddragon.marvelousmachines.content.ModMachine;
+import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
 import reddragon.marvelousmachines.content.machines.TickingOperationMachineBlockEntity;
 import team.reborn.energy.EnergyTier;
 
@@ -46,7 +46,7 @@ public class StoneBreakerBlockEntity extends TickingOperationMachineBlockEntity 
 	 */
 	private ItemStack currentTickDrop;
 
-	public StoneBreakerBlockEntity(final ModMachine machineType) {
+	public StoneBreakerBlockEntity(final MarvelousMachinesMachine machineType) {
 		super(machineType);
 		inventory = new RebornInventory<>(4, getClass().getSimpleName(), 64, this);
 	}

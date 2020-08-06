@@ -1,7 +1,7 @@
 package reddragon.marvelousmachines.content.machines;
 
-import reddragon.marvelousmachines.content.ModMachine;
+import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
 
 public interface BlockEntitySupplier {
-	AbstractMachineBlockEntity create(ModMachine machineType);
+	AbstractMachineBlockEntity create(MarvelousMachinesMachine machineType);
 }

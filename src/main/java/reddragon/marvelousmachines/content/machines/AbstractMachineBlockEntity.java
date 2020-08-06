@@ -5,12 +5,12 @@ import reborncore.api.IListInfoProvider;
 import reborncore.api.blockentity.InventoryProvider;
 import reborncore.client.screen.BuiltScreenHandlerProvider;
 import reborncore.common.powerSystem.PowerAcceptorBlockEntity;
-import reddragon.marvelousmachines.content.ModMachine;
+import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
 
 public abstract class AbstractMachineBlockEntity extends PowerAcceptorBlockEntity
 		implements InventoryProvider, SidedInventory, IListInfoProvider, BuiltScreenHandlerProvider {
 
-	public AbstractMachineBlockEntity(final ModMachine machineType) {
+	public AbstractMachineBlockEntity(final MarvelousMachinesMachine machineType) {
 		super(machineType.getEntityType());
 	}
 
