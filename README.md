@@ -8,7 +8,7 @@ It includes new machines like:
 
 * [Planter](../../wiki/Planter): Allows planting food crops and tree saplings automatically.
 * [Fertilizer](../../wiki/Fertilizer): Allows automated fertilization of food crops and tree saplings when provided with enough bonemeal.
-* [Harvester](../../wiki/Harvester): Allows harvesting food crops automatically, similiar to the *Greenhouse controller*. This machine will produce sewage though that can be further processed to obtain mud, fertilizer or biofuel.
+* [Harvester](../../wiki/Harvester): Allows harvesting food crops automatically, similiar to the *Greenhouse controller*. The harvester though will produce [sewage](../../wiki/Sewage) that can be further processed to obtain mud, fertilizer or biofuel.
 * [Log breaker](../../wiki/Log-breaker): Allows breaking wooden blocks right in front of the machine. A very crude tree cutter!
 * [Tree cutter](../../wiki/Tree-cutter): A more advanced log breaker! Allows chopping down full trees automatically, including logs and leaves.
 * [Water treatment plant](../../wiki/Water-treatment-plant): Allows recycling of sewage and other fluids to produce mud. Good for the environment!
