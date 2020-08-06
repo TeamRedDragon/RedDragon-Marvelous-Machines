@@ -26,7 +26,7 @@ public class MarvelousMachinesMod implements ModInitializer {
 		}
 
 		for (final MarvelousMachinesBlock block : MarvelousMachinesBlock.values()) {
-			block.getConfig().register(NAMESPACE, block.name());
+			block.getConfig().register(NAMESPACE, block.name(), ITEMGROUP);
 		}
 
 		for (final MarvelousMachinesFluid fluid : MarvelousMachinesFluid.values()) {
