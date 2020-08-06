@@ -1,5 +1,6 @@
 {
 	"itemGroup.marvelousmachines.item_group": "Marvelous Machines",
+	
 	"block.marvelousmachines.block_breaker": "Block breaker",
 	"block.marvelousmachines.color_extractor": "Color extractor",
 	"block.marvelousmachines.fertilizer": "Fertilizer",
@@ -16,9 +17,8 @@
 	"block.marvelousmachines.sludge": "Sludge",
 	"block.marvelousmachines.slurry": "Slurry",
 	
-	"fluid.fluidsewage": "Sewage",
-	"fluid.fluidsludge": "Sludge",
-	"fluid.fluidslurry": "Slurry"
-	
+	"item.marvelousmachines.sewage_bucket": "Sewage bucket",
+	"item.marvelousmachines.sludge_bucket": "Sludge bucket",
+	"item.marvelousmachines.slurry_bucket": "Slurry bucket"
 
 }

@@ -1,31 +1,30 @@
 package reddragon.marvelousmachines.content;
 
 import static reddragon.marvelousmachines.MarvelousMachinesMod.ITEMGROUP;
+import static reddragon.marvelousmachines.MarvelousMachinesMod.NAMESPACE;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.item.ItemGroup;
 import reddragon.api.configs.ModFluidConfig;
+import reddragon.api.configs.RegisterableFluid;
 import reddragon.api.content.BlockHolder;
 import reddragon.api.content.fluids.VaporizingFluidBlock;
 
-public enum MarvelousMachinesFluid implements BlockHolder {
-	SLURRY(new ModFluidConfig(0x906D67, true, 1, 8, ITEMGROUP)),
-	SLUDGE(new ModFluidConfig(0x271d12, true, 2, 16, ITEMGROUP)),
-	SEWAGE(new ModFluidConfig(0x53410b, true, 3, 24, ITEMGROUP));
+public enum MarvelousMachinesFluid implements BlockHolder, RegisterableFluid {
+	SEWAGE(new ModFluidConfig().color(0x53410b).ticksRandomly().levelDecreasePerBlock(3).flowSpeed(24)),
+	SLUDGE(new ModFluidConfig().color(0x271d12).ticksRandomly().levelDecreasePerBlock(2).flowSpeed(16)),
+	SLURRY(new ModFluidConfig().color(0x906D67).ticksRandomly().levelDecreasePerBlock(1).flowSpeed(8));
 
 	static {
-		// Initialize vaporizing results after enum instances have been created.
-		// This is required because we may have to access fluid cases and we can't put
-		// them in the constructor.
+		SEWAGE.addVaporizedResultChance(MarvelousMachinesBlock.MUD_BLOCK, 1);
+		SEWAGE.addVaporizedResultChance(SLUDGE, 1);
 
-		SEWAGE.config.addVaporizedResultChance(MarvelousMachinesBlock.MUD_BLOCK, 1);
-		SEWAGE.config.addVaporizedResultChance(SLUDGE, 1);
+		SLUDGE.addVaporizedResultChance(MarvelousMachinesBlock.MUD_BLOCK, 3);
+		SLUDGE.addVaporizedResultChance(Blocks.BONE_BLOCK, 1);
 
-		SLUDGE.config.addVaporizedResultChance(MarvelousMachinesBlock.MUD_BLOCK, 3);
-		SLUDGE.config.addVaporizedResultChance(Blocks.BONE_BLOCK, 1);
-
-		SLURRY.config.addVaporizedResultChance(Blocks.SLIME_BLOCK, 1);
-		SLURRY.config.addVaporizedResultChance(Blocks.BONE_BLOCK, 10);
-		SLURRY.config.addVaporizedResultChance(Blocks.WATER, 80);
+		SLURRY.addVaporizedResultChance(Blocks.SLIME_BLOCK, 1);
+		SLURRY.addVaporizedResultChance(Blocks.BONE_BLOCK, 10);
+		SLURRY.addVaporizedResultChance(Blocks.WATER, 80);
 	}
 
 	private final ModFluidConfig config;
@@ -39,8 +38,19 @@ public enum MarvelousMachinesFluid implements BlockHolder {
 		return config.getBlock();
 	}
 
+	@Override
 	public ModFluidConfig getConfig() {
 		return config;
+	}
+
+	@Override
+	public ItemGroup getItemGroup() {
+		return ITEMGROUP;
+	}
+
+	@Override
+	public String getNamespace() {
+		return NAMESPACE;
 	}
 
 }

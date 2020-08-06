@@ -1,5 +1,6 @@
 {
 	"itemGroup.marvelousmachines.item_group": "Meisterliche Maschinen",
+	
 	"block.marvelousmachines.block_breaker": "Blockbrecher",
 	"block.marvelousmachines.color_extractor": "Farbextrahierer",
 	"block.marvelousmachines.fertilizer": "Düngermaschine",
@@ -16,8 +17,8 @@
 	"block.marvelousmachines.sludge": "Klärschlamm",
 	"block.marvelousmachines.slurry": "Gülle",
 	
-	"fluid.fluidsewage": "Abwasser",
-	"fluid.fluidsludge": "Klärschlamm",
-	"fluid.fluidslurry": "Gülle"
+	"item.marvelousmachines.sewage_bucket": "Abwassereimer",
+	"item.marvelousmachines.sludge_bucket": "Klärschlammeimer",
+	"item.marvelousmachines.slurry_bucket": "Gülleeimer"
 	
 }
