@@ -2,7 +2,9 @@
   <img src="https://raw.githubusercontent.com/TeamRedDragon/RedDragon-Marvelous-Machines/master/misc/reddragon-marvelous-machines-banner.png">
 </p>
 
-A mod for Minecraft that adds a lot of farming related machines, aiming to further extend the capabilities introduced by [Tech Reborn](https://github.com/TechReborn/TechReborn). It includes new machines like:
+A mod for Minecraft that adds a lot of farming related machines, aiming to further extend the capabilities introduced by [Tech Reborn](https://github.com/TechReborn/TechReborn).
+
+It includes new machines like:
 
 * [Planter](../../wiki/Planter): Allows planting food crops and tree saplings automatically.
 * [Fertilizer](../../wiki/Fertilizer): Allows automated fertilization of food crops and tree saplings when provided with enough bonemeal.
