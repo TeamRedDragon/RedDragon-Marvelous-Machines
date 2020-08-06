@@ -1,19 +1,15 @@
-package reddragon.marvelousmachines.content.machines.stonebreaker;
+package reddragon.marvelousmachines.content.machines.blockbreaker;
 
-import java.util.Arrays;
 import java.util.List;
 
-import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
-import net.minecraft.block.Blocks;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.entity.player.PlayerEntity;
 import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.util.Identifier;
 import net.minecraft.util.math.BlockPos;
 import reborncore.client.screen.builder.BuiltScreenHandler;
 import reborncore.client.screen.builder.ScreenHandlerBuilder;
@@ -23,22 +19,12 @@ import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
 import reddragon.marvelousmachines.content.machines.TickingOperationMachineBlockEntity;
 import team.reborn.energy.EnergyTier;
 
-public class StoneBreakerBlockEntity extends TickingOperationMachineBlockEntity {
+public abstract class BlockBreakerBlockEntity extends TickingOperationMachineBlockEntity {
 
 	public static final int OUTPUT_SLOT = 0;
 	public static final int ENERGY_SLOT = 1;
 
-	private static final double ENERGY_PER_OPERATION = 200;
-	private static final int TICKS_PER_OPERATION = 100;
-
-	private static final List<Block> ALLOWED_BLOCKS = Arrays.asList(
-			Blocks.COBBLESTONE,
-			Blocks.STONE);
-
-	private static final List<Identifier> ALLOWED_TAGS = Arrays.asList(
-			new Identifier("minecraft", "logs"));
-
-	private final RebornInventory<StoneBreakerBlockEntity> inventory;
+	private final RebornInventory<BlockBreakerBlockEntity> inventory;
 
 	/**
 	 * The randomly selected item stack the block in front would drop in the current
@@ -46,7 +32,7 @@ public class StoneBreakerBlockEntity extends TickingOperationMachineBlockEntity 
 	 */
 	private ItemStack currentTickDrop;
 
-	public StoneBreakerBlockEntity(final MarvelousMachinesMachine machineType) {
+	public BlockBreakerBlockEntity(final MarvelousMachinesMachine machineType) {
 		super(machineType);
 		inventory = new RebornInventory<>(4, getClass().getSimpleName(), 64, this);
 	}
@@ -67,16 +53,6 @@ public class StoneBreakerBlockEntity extends TickingOperationMachineBlockEntity 
 	@Override
 	public Inventory getInventory() {
 		return inventory;
-	}
-
-	@Override
-	protected int getTicksPerOperation() {
-		return TICKS_PER_OPERATION;
-	}
-
-	@Override
-	protected double getEnergyPerOperation() {
-		return ENERGY_PER_OPERATION;
 	}
 
 	@Override
@@ -112,19 +88,7 @@ public class StoneBreakerBlockEntity extends TickingOperationMachineBlockEntity 
 		super.tick();
 	}
 
-	private boolean isBlockAllowed(final Block block) {
-		if (ALLOWED_BLOCKS.contains(block)) {
-			return true;
-		}
-
-		for (final Identifier identifier : ALLOWED_TAGS) {
-			if (block.isIn(TagRegistry.block(identifier))) {
-				return true;
-			}
-		}
-
-		return false;
-	}
+	protected abstract boolean isBlockAllowed(final Block block);
 
 	@Override
 	protected boolean couldPerformOperation() {

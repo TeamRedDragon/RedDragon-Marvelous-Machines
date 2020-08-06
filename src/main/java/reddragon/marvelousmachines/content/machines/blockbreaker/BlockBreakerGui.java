@@ -1,4 +1,4 @@
-package reddragon.marvelousmachines.content.machines.stonebreaker;
+package reddragon.marvelousmachines.content.machines.blockbreaker;
 
 import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
@@ -7,13 +7,13 @@ import reborncore.client.gui.guibuilder.GuiBuilder;
 import reborncore.client.screen.builder.BuiltScreenHandler;
 import reddragon.marvelousmachines.content.machines.AbstractMachineBlockEntity;
 
-public class StoneBreakerGui extends GuiBase<BuiltScreenHandler> {
+public class BlockBreakerGui extends GuiBase<BuiltScreenHandler> {
 
-	private final StoneBreakerBlockEntity blockEntity;
+	private final BlockBreakerBlockEntity blockEntity;
 
-	public StoneBreakerGui(final int syncID, final PlayerEntity player, final AbstractMachineBlockEntity blockEntity) {
+	public BlockBreakerGui(final int syncID, final PlayerEntity player, final AbstractMachineBlockEntity blockEntity) {
 		super(player, blockEntity, blockEntity.createScreenHandler(syncID, player));
-		this.blockEntity = (StoneBreakerBlockEntity) blockEntity;
+		this.blockEntity = (BlockBreakerBlockEntity) blockEntity;
 	}
 
 	@Override

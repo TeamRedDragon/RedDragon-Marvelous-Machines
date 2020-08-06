@@ -2,7 +2,7 @@
 	"parent": "minecraft:block/orientable",
     "textures": {
         "top": "marvelousmachines:block/base/tier1_machines/machine_top",
-        "front": "marvelousmachines:block/stone_breaker_front_off",
+        "front": "marvelousmachines:block/log_breaker_front_off",
         "side": "marvelousmachines:block/base/tier1_machines/machine_side"
     }
 }2
