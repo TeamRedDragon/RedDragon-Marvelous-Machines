@@ -15,6 +15,7 @@ It includes new machines like:
 * [Stone breaker](../../wiki/Stone-breaker): Allows building an automated cobblestone generator using water and lava.
 * [Block breaker](../../wiki/Block-breaker): A more advanced stone breaker! Allows breaking almost any block right in front of the machine. Use it wisely.
 * [Color extractor](../../wiki/Color-extractor): Allows to retrieve dye colors from processing blocks, such as recycling sand block to get yellow dye.
+* [Concrete mixer](../../wiki/Concrete-mixer): Allows to form concrete automatically when provided with concrete powder and water.
 
 All introduced machines are based on the Tech Reborn [API](https://github.com/TechReborn/RebornCore) and thus fully compatible with the power and item mechanics.
 
