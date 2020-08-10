@@ -12,7 +12,7 @@ It includes new machines like:
 * [Log breaker](../../wiki/Log-breaker): Allows breaking wooden blocks right in front of the machine. A very crude tree cutter when stacked!
 * [Tree cutter](../../wiki/Tree-cutter): A more advanced log breaker! Allows chopping down full trees automatically, including logs and leaves.
 * [Water treatment plant](../../wiki/Water-treatment-plant): Allows recycling of [sewage](../../wiki/Sewage) and other fluids to produce [mud](../../wiki/Mud-block). Good for the environment! 🌴
-* [Stone breaker](../../wiki/Stone-breaker): Allows building an automated cobblestone generator using water and lava.
+* [Stone breaker](../../wiki/Stone-breaker): Allows building an automated cobblestone generator using traditional flowing water and lava.
 * [Block breaker](../../wiki/Block-breaker): A more advanced stone breaker! Allows breaking almost any block right in front of the machine. Use it wisely.
 * [Color extractor](../../wiki/Color-extractor): Allows to retrieve dye colors from processing blocks, such as recycling sand block to get yellow dye.
 * [Concrete mixer](../../wiki/Concrete-mixer): Allows to form concrete automatically when provided with concrete powder and water.
