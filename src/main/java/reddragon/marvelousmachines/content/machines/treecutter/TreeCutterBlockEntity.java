@@ -10,7 +10,6 @@ import java.util.List;
 import java.util.Optional;
 
 import io.netty.util.internal.shaded.org.jctools.queues.MessagePassingQueue.Consumer;
-import net.fabricmc.fabric.api.tag.TagRegistry;
 import net.minecraft.block.Block;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.entity.BlockEntity;
@@ -19,8 +18,7 @@ import net.minecraft.inventory.Inventory;
 import net.minecraft.item.ItemStack;
 import net.minecraft.nbt.CompoundTag;
 import net.minecraft.server.world.ServerWorld;
-import net.minecraft.tag.Tag;
-import net.minecraft.util.Identifier;
+import net.minecraft.tag.BlockTags;
 import net.minecraft.util.math.BlockPos;
 import reborncore.client.screen.builder.BlockEntityScreenHandlerBuilder;
 import reborncore.client.screen.builder.BuiltScreenHandler;
@@ -81,11 +79,7 @@ public class TreeCutterBlockEntity extends TickingOperationMachineBlockEntity {
 	/**
 	 * The millibuckets of sewage per harvested block.
 	 */
-	public static final int SEWAGE_MB_PER_BLOCK = 5;
-
-	private static final Tag<Block> TAG_LOGS = TagRegistry.block(new Identifier("minecraft", "logs"));
-
-	private static final Tag<Block> TAG_LEAVES = TagRegistry.block(new Identifier("minecraft", "leaves"));
+	public static final int SEWAGE_MB_PER_BLOCK = 10;
 
 	public static final List<Integer> OUTPUT_SLOTS = Arrays.asList(3, 4, 5, 6);
 
@@ -374,7 +368,7 @@ public class TreeCutterBlockEntity extends TickingOperationMachineBlockEntity {
 	}
 
 	private boolean canHarvestBlockType(final Block block) {
-		return block.isIn(TAG_LOGS) || block.isIn(TAG_LEAVES);
+		return block.isIn(BlockTags.LOGS) || block.isIn(BlockTags.LEAVES);
 	}
 
 	/**
@@ -504,7 +498,7 @@ public class TreeCutterBlockEntity extends TickingOperationMachineBlockEntity {
 				final BlockPos checkedPos = centerPosition.add(offsetX, 0, offsetZ);
 				final BlockState blockState = world.getBlockState(checkedPos);
 
-				if (blockState.getBlock().isIn(TAG_LOGS)) {
+				if (blockState.getBlock().isIn(BlockTags.LOGS)) {
 					return Optional.of(checkedPos);
 				}
 			}
