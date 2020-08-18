@@ -34,7 +34,7 @@ public abstract class BlockBreakerBlockEntity extends TickingOperationMachineBlo
 
 	public BlockBreakerBlockEntity(final MarvelousMachinesMachine machineType) {
 		super(machineType);
-		inventory = new RebornInventory<>(4, getClass().getSimpleName(), 64, this);
+		inventory = new RebornInventory<>(2, getClass().getSimpleName(), 64, this);
 	}
 
 	@Override
@@ -120,7 +120,7 @@ public abstract class BlockBreakerBlockEntity extends TickingOperationMachineBlo
 				.hotbar()
 				.addInventory()
 				.blockEntity(this)
-				.outputSlot(OUTPUT_SLOT, 105, 40)
+				.outputSlot(OUTPUT_SLOT, 80, 40)
 				.energySlot(ENERGY_SLOT, 8, 72)
 				.syncEnergyValue()
 				.addInventory()

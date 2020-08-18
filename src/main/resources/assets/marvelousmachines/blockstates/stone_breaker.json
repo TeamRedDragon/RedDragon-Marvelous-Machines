@@ -1,13 +1,8 @@
 {
 	"variants": {
-		"facing=north,active=false": { "model": "marvelousmachines:block/stone_breaker" },
-		"facing=south,active=false": { "model": "marvelousmachines:block/stone_breaker", "y": 180 },
-		"facing=west,active=false":  { "model": "marvelousmachines:block/stone_breaker", "y": 270 },
-		"facing=east,active=false":  { "model": "marvelousmachines:block/stone_breaker", "y": 90 },
-		
-		"facing=north,active=true": { "model": "marvelousmachines:block/stone_breaker_on" },
-		"facing=south,active=true": { "model": "marvelousmachines:block/stone_breaker_on", "y": 180 },
-		"facing=west,active=true":  { "model": "marvelousmachines:block/stone_breaker_on", "y": 270 },
-		"facing=east,active=true":  { "model": "marvelousmachines:block/stone_breaker_on", "y": 90 }
+		"facing=north": { "model": "marvelousmachines:block/stone_breaker" },
+		"facing=south": { "model": "marvelousmachines:block/stone_breaker", "y": 180 },
+		"facing=west":  { "model": "marvelousmachines:block/stone_breaker", "y": 270 },
+		"facing=east":  { "model": "marvelousmachines:block/stone_breaker", "y": 90 }
 	}
 }

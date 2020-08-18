@@ -4,6 +4,7 @@ import static reddragon.marvelousmachines.MarvelousMachinesMod.ITEMGROUP;
 import static reddragon.marvelousmachines.MarvelousMachinesMod.NAMESPACE;
 
 import net.minecraft.block.Blocks;
+import net.minecraft.fluid.Fluid;
 import net.minecraft.item.ItemGroup;
 import reddragon.api.configs.ModFluidConfig;
 import reddragon.api.configs.RegisterableFluid;
@@ -41,6 +42,10 @@ public enum MarvelousMachinesFluid implements BlockHolder, RegisterableFluid {
 	@Override
 	public ModFluidConfig getConfig() {
 		return config;
+	}
+
+	public Fluid getFluid() {
+		return config.getStillFluid();
 	}
 
 	@Override

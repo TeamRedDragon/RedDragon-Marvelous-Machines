@@ -6,6 +6,6 @@
         "west": "marvelousmachines:block/base/tier2_machines/machine_west",
         "east": "marvelousmachines:block/base/tier2_machines/machine_east",
         "south": "marvelousmachines:block/base/tier2_machines/machine_back",
-        "front": "marvelousmachines:block/tree_cutter_front_on"
+        "front": "marvelousmachines:block/tree_cutter_front_off"
     }
 }

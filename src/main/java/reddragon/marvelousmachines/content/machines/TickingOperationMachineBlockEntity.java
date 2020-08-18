@@ -28,7 +28,7 @@ public abstract class TickingOperationMachineBlockEntity extends AbstractMachine
 	protected abstract void performOperation();
 
 	private int getUpgradedTicksPerOperation() {
-		return (int) Math.round((1.0 - getSpeedMultiplier()) * getTicksPerOperation());
+		return (int) Math.max(Math.round((1.0 - getSpeedMultiplier()) * getTicksPerOperation()), 1);
 	}
 
 	private double getUpgradedEnergyPerOperation() {
@@ -60,14 +60,12 @@ public abstract class TickingOperationMachineBlockEntity extends AbstractMachine
 	public void tick() {
 		super.tick();
 
-		if (!isActive()) {
-			return;
-		}
-
 		final double energyPerTick = getUpgradedEnergyPerOperation() / getUpgradedTicksPerOperation();
 
 		if (canUseEnergy(energyPerTick)) {
 			if (couldPerformOperation()) {
+				setIsActive(true);
+
 				useEnergy(energyPerTick);
 				completedTicks = (completedTicks + 1) % getUpgradedTicksPerOperation();
 
@@ -75,8 +73,12 @@ public abstract class TickingOperationMachineBlockEntity extends AbstractMachine
 					performOperation();
 				}
 			} else {
+				setIsActive(false);
+
 				resetOperationProgress();
 			}
+		} else {
+			setIsActive(false);
 		}
 	}
 
