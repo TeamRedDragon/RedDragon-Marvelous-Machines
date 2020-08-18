@@ -34,9 +34,9 @@ import reddragon.marvelousmachines.gui.AbstractGui.GuiFactory;
  * implementation.
  */
 public enum MarvelousMachinesMachine implements BlockHolder {
-	STONE_BREAKER(BlockBreakerBlock::new, StoneBreakerBlockEntity::new, BlockBreakerGui::new),
-	LOG_BREAKER(BlockBreakerBlock::new, LogBreakerBlockEntity::new, BlockBreakerGui::new),
-	TREE_CUTTER(TreeCutterBlock::new, TreeCutterBlockEntity::new, TreeCutterGui::new);
+	STONE_BREAKER(BlockBreakerBlock::new, StoneBreakerBlockEntity::new, () -> () -> BlockBreakerGui::new),
+	LOG_BREAKER(BlockBreakerBlock::new, LogBreakerBlockEntity::new, () -> () -> BlockBreakerGui::new),
+	TREE_CUTTER(TreeCutterBlock::new, TreeCutterBlockEntity::new, () -> () -> TreeCutterGui::new);
 
 	private AbstractMachineBlock block;
 
@@ -47,11 +47,11 @@ public enum MarvelousMachinesMachine implements BlockHolder {
 	private MarvelousMachinesMachine(
 			final BlockSupplier blockSupplier,
 			final BlockEntitySupplier blockEntitySupplier,
-			final GuiFactory<? extends AbstractMachineBlockEntity> guiSupplier) {
+			final Supplier<Supplier<GuiFactory<? extends AbstractMachineBlockEntity>>> guiSupplier) {
 
 		block = blockSupplier.create(this, blockEntitySupplier);
 
-		guiType = AbstractGui.register(this, () -> () -> guiSupplier);
+		guiType = AbstractGui.register(this, () -> () -> guiSupplier.get().get());
 	}
 
 	public void setEntityType(final BlockEntityType<?> newEntityType) {
