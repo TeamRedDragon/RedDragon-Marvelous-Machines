@@ -34,7 +34,7 @@ public class TreeCutterGui extends GuiBase<BuiltScreenHandler> {
 		drawSlot(matrixStack, 152, 35, layer);
 		drawSlot(matrixStack, 152, 55, layer);
 
-		drawOutputSlotBar(matrixStack, 39, 44, 4, layer);
+		drawOutputSlotBar(matrixStack, 37, 44, 4, layer);
 	}
 
 	@Override
