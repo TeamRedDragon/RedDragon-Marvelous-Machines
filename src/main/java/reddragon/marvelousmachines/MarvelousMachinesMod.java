@@ -3,14 +3,16 @@ package reddragon.marvelousmachines;
 import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
+import net.fabricmc.api.ClientModInitializer;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.ItemGroup;
 import reddragon.api.utils.ItemGroupUtils;
 import reddragon.marvelousmachines.content.MarvelousMachinesBlock;
 import reddragon.marvelousmachines.content.MarvelousMachinesFluid;
 import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
+import reddragon.marvelousmachines.gui.ToolTipHandler;
 
-public class MarvelousMachinesMod implements ModInitializer {
+public class MarvelousMachinesMod implements ModInitializer, ClientModInitializer {
 
 	public static final String NAMESPACE = "marvelousmachines";
 
@@ -34,4 +36,8 @@ public class MarvelousMachinesMod implements ModInitializer {
 		}
 	}
 
+	@Override
+	public void onInitializeClient() {
+		ToolTipHandler.setup();
+	}
 }
