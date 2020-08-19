@@ -11,7 +11,7 @@ Marvelous machines introduces new blocks like:
 * [Harvester](../../wiki/Harvester): Allows harvesting food crops automatically, similiar to the *Greenhouse controller*. The harvester though will produce [sewage](../../wiki/Sewage) that can be further processed to obtain [mud](../../wiki/Mud-block), fertilizer or biofuel.
 * [Log breaker](../../wiki/Log-breaker): Allows breaking wooden blocks right in front of the machine. A very crude tree cutter when stacked!
 * [Tree cutter](../../wiki/Tree-cutter): A more advanced log breaker! Allows chopping down full trees automatically, including logs and leaves.
-* [Water treatment plant](../../wiki/Water-treatment-plant): Allows recycling of [sewage](../../wiki/Sewage) and other fluids to produce [mud](../../wiki/Mud-block). Good for the environment! 🌴
+* [Water treatment plant](../../wiki/Water-treatment-plant): Allows recycling of [sewage](../../wiki/Sewage) and other fluids, producing [mud](../../wiki/Mud-block). Good for the environment! 🌴
 * [Stone breaker](../../wiki/Stone-breaker): Allows building an automated cobblestone generator using oldschool flowing water and lava.
 * [Block breaker](../../wiki/Block-breaker): A more advanced stone breaker! Allows breaking almost any block right in front of the machine. Use it wisely.
 * [Color extractor](../../wiki/Color-extractor): Allows to retrieve dye colors from processing blocks, such as recycling sand block to get yellow dye.
