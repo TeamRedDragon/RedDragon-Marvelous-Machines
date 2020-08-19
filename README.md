@@ -19,6 +19,8 @@ It includes new machines like:
 
 All introduced machines are based on the Tech Reborn [API](https://github.com/TechReborn/RebornCore) and thus fully compatible with the power and item mechanics.
 
+Check the [Wiki](../../wiki/) for details about all content this mod adds to the game.
+
 # Part of the RedDragon mod pack
 Feel free to check our companion mods that are designed to work closely together:
 
