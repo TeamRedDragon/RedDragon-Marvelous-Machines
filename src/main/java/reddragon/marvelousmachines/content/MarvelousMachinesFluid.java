@@ -9,30 +9,30 @@ import net.minecraft.item.ItemGroup;
 import reddragon.api.configs.ModFluidConfig;
 import reddragon.api.configs.RegisterableFluid;
 import reddragon.api.content.BlockHolder;
-import reddragon.api.content.fluids.VaporizingFluidBlock;
+import reddragon.api.content.fluids.DryingFluidBlock;
 
 public enum MarvelousMachinesFluid implements BlockHolder, RegisterableFluid {
 	SLURRY(new ModFluidConfig().color(0x906D67)
 			.ticksRandomly()
 			.levelDecreasePerBlock(1)
 			.flowSpeed(8)
-			.vaporizesTo(Blocks.SLIME_BLOCK, 1)
-			.vaporizesTo(Blocks.BONE_BLOCK, 10)
-			.vaporizesTo(Blocks.WATER, 80)),
+			.driesTo(Blocks.SLIME_BLOCK, 1)
+			.driesTo(Blocks.BONE_BLOCK, 10)
+			.driesTo(Blocks.WATER, 80)),
 
 	SLUDGE(new ModFluidConfig().color(0x271d12)
 			.ticksRandomly()
 			.levelDecreasePerBlock(2)
 			.flowSpeed(16)
-			.vaporizesTo(MarvelousMachinesBlock.MUD_BLOCK, 3)
-			.vaporizesTo(Blocks.BONE_BLOCK, 1)),
+			.driesTo(MarvelousMachinesBlock.MUD_BLOCK, 3)
+			.driesTo(Blocks.BONE_BLOCK, 1)),
 
 	SEWAGE(new ModFluidConfig().color(0x53410b)
 			.ticksRandomly()
 			.levelDecreasePerBlock(3)
 			.flowSpeed(24)
-			.vaporizesTo(MarvelousMachinesBlock.MUD_BLOCK, 1)
-			.vaporizesTo(MarvelousMachinesFluid.SLUDGE, 1));
+			.driesTo(MarvelousMachinesBlock.MUD_BLOCK, 1)
+			.driesTo(MarvelousMachinesFluid.SLUDGE, 1));
 
 	private final ModFluidConfig config;
 
@@ -41,7 +41,7 @@ public enum MarvelousMachinesFluid implements BlockHolder, RegisterableFluid {
 	}
 
 	@Override
-	public VaporizingFluidBlock getBlock() {
+	public DryingFluidBlock getBlock() {
 		return config.getBlock();
 	}
 

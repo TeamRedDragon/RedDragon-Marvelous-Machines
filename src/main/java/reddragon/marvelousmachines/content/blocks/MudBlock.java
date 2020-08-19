@@ -1,5 +1,7 @@
 package reddragon.marvelousmachines.content.blocks;
 
+import static reddragon.api.content.fluids.DryingFluidBlock.MIN_LIGHT_LEVEL_FOR_DRYING;
+
 import java.util.Iterator;
 import java.util.Random;
 
@@ -21,24 +23,24 @@ public class MudBlock extends Block {
 	public static final IntProperty MOISTURE = IntProperty.of("moisture", 0, 7);
 
 	@Override
-	protected void appendProperties(Builder<Block, BlockState> builder) {
+	protected void appendProperties(final Builder<Block, BlockState> builder) {
 		super.appendProperties(builder);
 		builder.add(MOISTURE);
 	}
 
-	public MudBlock(Settings settings) {
+	public MudBlock(final Settings settings) {
 		super(settings);
 		setDefaultState(stateManager.getDefaultState().with(MOISTURE, 7));
 	}
 
 	@Override
-	public boolean hasRandomTicks(BlockState state) {
+	public boolean hasRandomTicks(final BlockState state) {
 		return true;
 	}
 
 	@Override
-	public void randomTick(BlockState state, ServerWorld world, BlockPos pos, Random random) {
-		int moisture = state.get(MOISTURE);
+	public void randomTick(final BlockState state, final ServerWorld world, final BlockPos pos, final Random random) {
+		final int moisture = state.get(MOISTURE);
 		if (isAdjacentLit(world, pos)) {
 			// its only drying at sunlight / heat
 
@@ -61,8 +63,8 @@ public class MudBlock extends Block {
 		}
 	}
 
-	public static void setToDryBlock(BlockState state, World world, BlockPos pos) {
-		float randomRoll = RandomUtils.nextFloat(0, 9);
+	public static void setToDryBlock(final BlockState state, final World world, final BlockPos pos) {
+		final float randomRoll = RandomUtils.nextFloat(0, 9);
 		// In a 3x3 Field about 2 become CLAY and about 1 become MYCELIUM while the
 		// rest becomes DIRT
 		BlockState dryBlock;
@@ -77,8 +79,8 @@ public class MudBlock extends Block {
 		world.syncWorldEvent(1501, pos, 0); // ExtingushEvent
 	}
 
-	private static boolean isWaterNearby(WorldView world, BlockPos pos, int radius) {
-		Iterator<BlockPos> var2 = BlockPos.iterate(pos.add(-radius, -1, -radius), pos.add(radius, 1, radius))
+	private static boolean isWaterNearby(final WorldView world, final BlockPos pos, final int radius) {
+		final Iterator<BlockPos> var2 = BlockPos.iterate(pos.add(-radius, -1, -radius), pos.add(radius, 1, radius))
 				.iterator();
 
 		BlockPos blockPos;
@@ -91,13 +93,13 @@ public class MudBlock extends Block {
 		return true;
 	}
 
-	private static boolean isAdjacentLit(WorldView world, BlockPos pos) {
-		return (world.getLightLevel(pos.up(), 0) >= 15)
-				|| (world.getLightLevel(pos.north(), 0) >= 15)
-				|| (world.getLightLevel(pos.east(), 0) >= 15)
-				|| (world.getLightLevel(pos.down(), 0) >= 15)
-				|| (world.getLightLevel(pos.south(), 0) >= 15)
-				|| (world.getLightLevel(pos.west(), 0) >= 15);
+	private static boolean isAdjacentLit(final WorldView world, final BlockPos pos) {
+		return (world.getLightLevel(pos.up(), 0) >= MIN_LIGHT_LEVEL_FOR_DRYING)
+				|| (world.getLightLevel(pos.north(), 0) >= MIN_LIGHT_LEVEL_FOR_DRYING)
+				|| (world.getLightLevel(pos.east(), 0) >= MIN_LIGHT_LEVEL_FOR_DRYING)
+				|| (world.getLightLevel(pos.down(), 0) >= MIN_LIGHT_LEVEL_FOR_DRYING)
+				|| (world.getLightLevel(pos.south(), 0) >= MIN_LIGHT_LEVEL_FOR_DRYING)
+				|| (world.getLightLevel(pos.west(), 0) >= MIN_LIGHT_LEVEL_FOR_DRYING);
 	}
 
 }
