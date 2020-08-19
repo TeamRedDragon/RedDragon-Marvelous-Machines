@@ -12,21 +12,27 @@ import reddragon.api.content.BlockHolder;
 import reddragon.api.content.fluids.VaporizingFluidBlock;
 
 public enum MarvelousMachinesFluid implements BlockHolder, RegisterableFluid {
-	SEWAGE(new ModFluidConfig().color(0x53410b).ticksRandomly().levelDecreasePerBlock(3).flowSpeed(24)),
-	SLUDGE(new ModFluidConfig().color(0x271d12).ticksRandomly().levelDecreasePerBlock(2).flowSpeed(16)),
-	SLURRY(new ModFluidConfig().color(0x906D67).ticksRandomly().levelDecreasePerBlock(1).flowSpeed(8));
+	SLURRY(new ModFluidConfig().color(0x906D67)
+			.ticksRandomly()
+			.levelDecreasePerBlock(1)
+			.flowSpeed(8)
+			.vaporizesTo(Blocks.SLIME_BLOCK, 1)
+			.vaporizesTo(Blocks.BONE_BLOCK, 10)
+			.vaporizesTo(Blocks.WATER, 80)),
 
-	static {
-		SEWAGE.addVaporizedResultChance(MarvelousMachinesBlock.MUD_BLOCK, 1);
-		SEWAGE.addVaporizedResultChance(SLUDGE, 1);
+	SLUDGE(new ModFluidConfig().color(0x271d12)
+			.ticksRandomly()
+			.levelDecreasePerBlock(2)
+			.flowSpeed(16)
+			.vaporizesTo(MarvelousMachinesBlock.MUD_BLOCK, 3)
+			.vaporizesTo(Blocks.BONE_BLOCK, 1)),
 
-		SLUDGE.addVaporizedResultChance(MarvelousMachinesBlock.MUD_BLOCK, 3);
-		SLUDGE.addVaporizedResultChance(Blocks.BONE_BLOCK, 1);
-
-		SLURRY.addVaporizedResultChance(Blocks.SLIME_BLOCK, 1);
-		SLURRY.addVaporizedResultChance(Blocks.BONE_BLOCK, 10);
-		SLURRY.addVaporizedResultChance(Blocks.WATER, 80);
-	}
+	SEWAGE(new ModFluidConfig().color(0x53410b)
+			.ticksRandomly()
+			.levelDecreasePerBlock(3)
+			.flowSpeed(24)
+			.vaporizesTo(MarvelousMachinesBlock.MUD_BLOCK, 1)
+			.vaporizesTo(MarvelousMachinesFluid.SLUDGE, 1));
 
 	private final ModFluidConfig config;
 
