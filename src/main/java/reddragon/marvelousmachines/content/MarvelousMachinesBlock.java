@@ -15,17 +15,11 @@ import reddragon.api.content.BlockHolder;
 import reddragon.marvelousmachines.content.blocks.MudBlock;
 
 public enum MarvelousMachinesBlock implements BlockHolder, RegisterableBlock {
-	/*
-	 * MUD_BLOCK(new MudBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC)
-	 * .strength(1.2f, 5.0f) .slipperiness(0.985f) .sounds(BlockSoundGroup.SLIME)
-	 * .breakByTool(FabricToolTags.SHOVELS) .breakByHand(true) .ticksRandomly()));
-	 */
 	MUD_BLOCK(new MudBlock(FabricBlockSettings.of(Material.SOLID_ORGANIC)
 			.strength(1.2f, 5.0f)
 			.slipperiness(0.985f)
 			.breakByTool(FabricToolTags.SHOVELS)
 			.breakByHand(true)
-			// .velocityMultiplier(0.5f)
 			.jumpVelocityMultiplier(0.5f)
 			.sounds(BlockSoundGroup.HONEY)
 			.ticksRandomly()));
