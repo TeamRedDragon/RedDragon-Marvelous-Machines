@@ -1,9 +1,6 @@
 {
 	"itemGroup.marvelousmachines.item_group": "Meisterliche Maschinen",
 	
-	"block.marvelousmachines.block_breaker": "Blockbrecher",
-	"marvelousmachines.tooltip.block.marvelousmachines.block_breaker": "Baut den Block direkt vor der Maschine ab",
-	
 	"block.marvelousmachines.color_extractor": "Farbextrahierer",
 	"marvelousmachines.tooltip.block.marvelousmachines.color_extractor": "Generiert Farbe durch das Verarbeiten von Blöcken",
 	
@@ -13,14 +10,17 @@
 	"block.marvelousmachines.harvester": "Erntemaschine",
 	"marvelousmachines.tooltip.block.marvelousmachines.harvester": "Erntet Nahrung und erzeugt dabei Abwasser",
 	
-	"block.marvelousmachines.log_breaker": "Stammbrecher",
-	"marvelousmachines.tooltip.block.marvelousmachines.log_breaker": "Baut einen Stammblock direkt vor der Maschine ab",
-	
 	"block.marvelousmachines.planter": "Pflanzmaschine",
 	"marvelousmachines.tooltip.block.marvelousmachines.planter": "Pflanzt automatisch Nahrung und Baumsetzlinge",
 	
 	"block.marvelousmachines.stone_breaker": "Steinbrecher",
 	"marvelousmachines.tooltip.block.marvelousmachines.stone_breaker": "Baut Stein- und Bruchsteinblöcke direkt vor der Maschine ab",
+	
+	"block.marvelousmachines.log_breaker": "Stammbrecher",
+	"marvelousmachines.tooltip.block.marvelousmachines.log_breaker": "Baut einen Stammblock direkt vor der Maschine ab",
+	
+	"block.marvelousmachines.arbitrary_block_breaker": "Blockbrecher",
+	"marvelousmachines.tooltip.block.marvelousmachines.arbitrary_block_breaker": "Baut den Block direkt vor der Maschine ab",
 	
 	"block.marvelousmachines.tree_cutter": "Baumfäller",
 	"marvelousmachines.tooltip.block.marvelousmachines.tree_cutter": "Fällt Bäume, einschließlich Stamm und Blätter",

@@ -12,13 +12,19 @@ import reborncore.api.blockentity.IMachineGuiHandler;
 import reborncore.common.blocks.BlockMachineBase;
 import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
 
-public abstract class AbstractMachineBlock extends BlockMachineBase implements BlockEntityProvider {
+/**
+ * Single and common machine block that does not provide any custom properties.
+ * <p>
+ * The orientable block is initialized as {@link Material.METAL} with a strength
+ * of 2.
+ */
+public class GenericMachineBlock extends BlockMachineBase implements BlockEntityProvider {
 
 	private final MarvelousMachinesMachine machineType;
 
 	private final BlockEntitySupplier blockEntitySupplier;
 
-	public AbstractMachineBlock(final MarvelousMachinesMachine machineType, final BlockEntitySupplier blockEntitySupplier) {
+	public GenericMachineBlock(final MarvelousMachinesMachine machineType, final BlockEntitySupplier blockEntitySupplier) {
 		super(FabricBlockSettings.of(Material.METAL).strength(2F, 2F));
 
 		setDefaultState(stateManager.getDefaultState().with(FACING, Direction.NORTH).with(ACTIVE, false));

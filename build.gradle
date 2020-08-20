@@ -27,6 +27,7 @@ dependencies {
 	modApi (techRebornVersion) {
 		exclude group: "net.fabricmc.fabric-api"
 	}
+	include techRebornVersion
 	
 	modApi 'teamreborn:energy:0.1.0'
 }

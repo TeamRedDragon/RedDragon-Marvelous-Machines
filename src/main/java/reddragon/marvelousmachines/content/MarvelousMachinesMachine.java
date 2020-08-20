@@ -13,15 +13,16 @@ import net.minecraft.util.registry.Registry;
 import reborncore.RebornRegistry;
 import reddragon.api.content.BlockHolder;
 import reddragon.marvelousmachines.MarvelousMachinesMod;
-import reddragon.marvelousmachines.content.machines.AbstractMachineBlock;
 import reddragon.marvelousmachines.content.machines.AbstractMachineBlockEntity;
 import reddragon.marvelousmachines.content.machines.BlockEntitySupplier;
 import reddragon.marvelousmachines.content.machines.BlockSupplier;
-import reddragon.marvelousmachines.content.machines.blockbreaker.BlockBreakerBlock;
-import reddragon.marvelousmachines.content.machines.blockbreaker.BlockBreakerGui;
-import reddragon.marvelousmachines.content.machines.blockbreaker.LogBreakerBlockEntity;
-import reddragon.marvelousmachines.content.machines.blockbreaker.StoneBreakerBlockEntity;
-import reddragon.marvelousmachines.content.machines.treecutter.TreeCutterBlock;
+import reddragon.marvelousmachines.content.machines.GenericMachineBlock;
+import reddragon.marvelousmachines.content.machines.blockbreaker.all.ArbitraryBlockBreakerBlockEntity;
+import reddragon.marvelousmachines.content.machines.blockbreaker.all.ArbitraryBlockBreakerGui;
+import reddragon.marvelousmachines.content.machines.blockbreaker.log.LogBreakerBlockEntity;
+import reddragon.marvelousmachines.content.machines.blockbreaker.log.LogBreakerGui;
+import reddragon.marvelousmachines.content.machines.blockbreaker.stone.StoneBreakerBlockEntity;
+import reddragon.marvelousmachines.content.machines.blockbreaker.stone.StoneBreakerGui;
 import reddragon.marvelousmachines.content.machines.treecutter.TreeCutterBlockEntity;
 import reddragon.marvelousmachines.content.machines.treecutter.TreeCutterGui;
 import reddragon.marvelousmachines.gui.AbstractGui;
@@ -34,11 +35,12 @@ import reddragon.marvelousmachines.gui.AbstractGui.GuiFactory;
  * implementation.
  */
 public enum MarvelousMachinesMachine implements BlockHolder {
-	STONE_BREAKER(BlockBreakerBlock::new, StoneBreakerBlockEntity::new, () -> () -> BlockBreakerGui::new),
-	LOG_BREAKER(BlockBreakerBlock::new, LogBreakerBlockEntity::new, () -> () -> BlockBreakerGui::new),
-	TREE_CUTTER(TreeCutterBlock::new, TreeCutterBlockEntity::new, () -> () -> TreeCutterGui::new);
+	STONE_BREAKER(GenericMachineBlock::new, StoneBreakerBlockEntity::new, () -> () -> StoneBreakerGui::new),
+	LOG_BREAKER(GenericMachineBlock::new, LogBreakerBlockEntity::new, () -> () -> LogBreakerGui::new),
+	ARBITRARY_BLOCK_BREAKER(GenericMachineBlock::new, ArbitraryBlockBreakerBlockEntity::new, () -> () -> ArbitraryBlockBreakerGui::new),
+	TREE_CUTTER(GenericMachineBlock::new, TreeCutterBlockEntity::new, () -> () -> TreeCutterGui::new);
 
-	private AbstractMachineBlock block;
+	private GenericMachineBlock block;
 
 	private AbstractGui<?> guiType;
 

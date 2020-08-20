@@ -19,12 +19,12 @@ import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
 import reddragon.marvelousmachines.content.machines.TickingOperationMachineBlockEntity;
 import team.reborn.energy.EnergyTier;
 
-public abstract class BlockBreakerBlockEntity extends TickingOperationMachineBlockEntity {
+public abstract class AbstractBlockBreakerBlockEntity extends TickingOperationMachineBlockEntity {
 
 	public static final int OUTPUT_SLOT = 0;
 	public static final int ENERGY_SLOT = 1;
 
-	private final RebornInventory<BlockBreakerBlockEntity> inventory;
+	private final RebornInventory<AbstractBlockBreakerBlockEntity> inventory;
 
 	/**
 	 * The randomly selected item stack the block in front would drop in the current
@@ -32,7 +32,7 @@ public abstract class BlockBreakerBlockEntity extends TickingOperationMachineBlo
 	 */
 	private ItemStack currentTickDrop;
 
-	public BlockBreakerBlockEntity(final MarvelousMachinesMachine machineType) {
+	public AbstractBlockBreakerBlockEntity(final MarvelousMachinesMachine machineType) {
 		super(machineType);
 		inventory = new RebornInventory<>(2, getClass().getSimpleName(), 64, this);
 	}
@@ -120,7 +120,7 @@ public abstract class BlockBreakerBlockEntity extends TickingOperationMachineBlo
 				.hotbar()
 				.addInventory()
 				.blockEntity(this)
-				.outputSlot(OUTPUT_SLOT, 80, 40)
+				.outputSlot(OUTPUT_SLOT, 115, 40)
 				.energySlot(ENERGY_SLOT, 8, 72)
 				.syncEnergyValue()
 				.addInventory()

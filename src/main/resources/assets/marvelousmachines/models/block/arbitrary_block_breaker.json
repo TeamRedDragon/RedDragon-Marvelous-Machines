@@ -1,0 +1,11 @@
+{
+	"parent": "minecraft:block/orientable",
+    "textures": {
+        "up": "marvelousmachines:block/base/tier2_machines/machine_top",
+		"down": "marvelousmachines:block/base/tier2_machines/machine_bottom",
+        "west": "marvelousmachines:block/base/tier2_machines/machine_west",
+        "east": "marvelousmachines:block/base/tier2_machines/machine_east",
+        "south": "marvelousmachines:block/base/tier2_machines/machine_back",
+        "front": "marvelousmachines:block/arbitrary_block_breaker_front_off"
+    }
+}2

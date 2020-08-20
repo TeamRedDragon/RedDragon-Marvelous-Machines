@@ -17,7 +17,7 @@ public class MarvelousMachinesMod implements ModInitializer, ClientModInitialize
 	public static final String NAMESPACE = "marvelousmachines";
 
 	public static final ItemGroup ITEMGROUP = ItemGroupUtils.createItemGroup(NAMESPACE,
-			MarvelousMachinesMachine.STONE_BREAKER.getBlock());
+			MarvelousMachinesMachine.LOG_BREAKER.getBlock());
 
 	public static final Logger LOG = LogManager.getLogger(NAMESPACE);
 
