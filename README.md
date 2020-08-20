@@ -6,16 +6,16 @@ A mod for Minecraft that adds a lot of **farming related machines**, aiming to f
 
 Marvelous machines introduces new blocks like:
 
-* [Planter](../../wiki/Planter): Allows planting food crops and tree saplings automatically.
-* [Fertilizer](../../wiki/Fertilizer): Allows automated fertilization of food crops and tree saplings when provided with enough bonemeal.
-* [Harvester](../../wiki/Harvester): Allows harvesting food crops automatically, similiar to the *Greenhouse controller*. The harvester though will produce [sewage](../../wiki/Sewage) that can be further processed to obtain [mud](../../wiki/Mud-block), fertilizer or biofuel.
-* [Log breaker](../../wiki/Log-breaker): Allows breaking wooden blocks right in front of the machine. A very crude tree cutter when stacked!
-* [Tree cutter](../../wiki/Tree-cutter): A more advanced log breaker! Allows chopping down full trees automatically, including logs and leaves.
-* [Water treatment plant](../../wiki/Water-treatment-plant): Allows recycling of [sewage](../../wiki/Sewage) and other fluids to produce [mud](../../wiki/Mud-block). Good for the environment! 🌴
+* [Planter](../../wiki/Planter): Plants food crops and tree saplings automatically.
+* [Fertilizer](../../wiki/Fertilizer): Automated fertilization of food crops and tree saplings when provided with enough bonemeal.
+* [Harvester](../../wiki/Harvester): Harvests food crops automatically, similiar to the *Greenhouse controller*. The harvester though will produce [sewage](../../wiki/Sewage) that can be further processed to obtain [mud](../../wiki/Mud-block), fertilizer or biofuel.
+* [Log breaker](../../wiki/Log-breaker): Breaks wooden blocks right in front of the machine. A very crude tree cutter when stacked!
+* [Tree cutter](../../wiki/Tree-cutter): A more advanced log breaker! Chops down full trees automatically, including logs and leaves.
+* [Water treatment plant](../../wiki/Water-treatment-plant): Recycles [sewage](../../wiki/Sewage) and other fluids, producing [mud](../../wiki/Mud-block). Good for the environment! 🌴
 * [Stone breaker](../../wiki/Stone-breaker): Allows building an automated cobblestone generator using oldschool flowing water and lava.
-* [Block breaker](../../wiki/Block-breaker): A more advanced stone breaker! Allows breaking almost any block right in front of the machine. Use it wisely.
-* [Color extractor](../../wiki/Color-extractor): Allows to retrieve dye colors from processing blocks, such as recycling sand block to get yellow dye.
-* [Concrete mixer](../../wiki/Concrete-mixer): Allows to form concrete automatically when provided with concrete powder and water.
+* [Block breaker](../../wiki/Block-breaker): A more advanced stone breaker! Breaks almost any block right in front of the machine. Use it wisely.
+* [Color extractor](../../wiki/Color-extractor): Generates dye colors by processing blocks, e.g. recycling sand blocks to get yellow dye.
+* [Concrete mixer](../../wiki/Concrete-mixer): Forms concrete automatically when provided with concrete powder and water.
 
 All introduced machines are based on the Tech Reborn [API](https://github.com/TechReborn/RebornCore) and thus fully compatible with the power and item mechanics.
 
