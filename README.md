@@ -39,7 +39,12 @@ There are no additional mod dependencies you need to install. Tech Reborn is alr
 
 Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check [Installing Fabric](https://fabricmc.net/wiki/install) for more details.
 
-While not required, we highly recommend using [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) to always have the machine recipes at your fingertips.
+# Recommended mods
+
+While not required, we highly recommend using a couple of other mods in conjunction with Marvelous machines:
+
+* [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) to always have the machine recipes at your fingertips.
+* [Simple BC Pipes](https://www.curseforge.com/minecraft/mc-mods/simplepipes) to fully automate item and fluid transportation.
 
 # Installation
 
