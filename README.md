@@ -15,6 +15,7 @@ Marvelous machines introduces new blocks like:
 * [Stone breaker](../../wiki/Stone-breaker): Allows building an automated cobblestone generator using old-school flowing water and lava.
 * [Block breaker](../../wiki/Block-breaker): A more advanced stone breaker! Breaks almost any block right in front of the machine. Use it wisely.
 * [Fluid Outlet](../../wiki/Fluid-outlet): Places any fluid from its internal tank right in front of the machine. *
+* [Fisher](../../wiki/Fisher): Catches fish from the sea (and quite often some garbage as well). *
 * [Color extractor](../../wiki/Color-extractor): Generates dye colors by processing blocks, e.g. recycling sand blocks to get yellow dye. *
 * [Concrete mixer](../../wiki/Concrete-mixer): Forms concrete automatically when provided with concrete powder and water. *
 
