@@ -5,8 +5,6 @@ import static reddragon.api.content.fluids.DryingFluidBlock.MIN_LIGHT_LEVEL_FOR_
 import java.util.Iterator;
 import java.util.Random;
 
-import org.apache.commons.lang3.RandomUtils;
-
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.block.Block;
@@ -27,11 +25,21 @@ import net.minecraft.util.math.Vec3d;
 import net.minecraft.util.math.Vec3i;
 import net.minecraft.world.World;
 import net.minecraft.world.WorldView;
+import reddragon.api.random.RandomPicker;
 import reddragon.marvelousmachines.content.MarvelousMachinesBlock;
 
 public class MudBlock extends Block {
 
 	public static final IntProperty MOISTURE = IntProperty.of("moisture", 0, 7);
+
+	/**
+	 * In a 3x3 grid statistically 2 blocks become CLAY, 1 becomes MYCELIUM and 6
+	 * become DIRT
+	 */
+	private static final RandomPicker<Block> DRIED_RESULT_PICKER = new RandomPicker<Block>()
+			.withChance(4, () -> Blocks.CLAY)
+			.withChance(16, () -> Blocks.DIRT)
+			.withChance(1, () -> Blocks.MYCELIUM);
 
 	@Override
 	protected void appendProperties(final Builder<Block, BlockState> builder) {
@@ -75,18 +83,9 @@ public class MudBlock extends Block {
 	}
 
 	public static void setToDryBlock(final BlockState state, final World world, final BlockPos pos) {
-		final float randomRoll = RandomUtils.nextFloat(0, 9);
-		// In a 3x3 Field about 2 become CLAY and about 1 become MYCELIUM while the
-		// rest becomes DIRT
-		BlockState dryBlock;
-		if (randomRoll <= 2f) {
-			dryBlock = Blocks.CLAY.getDefaultState();
-		} else if (randomRoll <= 8f) {
-			dryBlock = Blocks.DIRT.getDefaultState();
-		} else {
-			dryBlock = Blocks.MYCELIUM.getDefaultState();
-		}
-		world.setBlockState(pos, dryBlock);
+		final Block dryBlock = DRIED_RESULT_PICKER.pick();
+
+		world.setBlockState(pos, dryBlock.getDefaultState());
 		world.syncWorldEvent(1501, pos, 0); // ExtingushEvent
 	}
 
