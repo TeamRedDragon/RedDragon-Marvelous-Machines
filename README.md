@@ -14,6 +14,7 @@ Marvelous machines introduces new blocks like:
 * [Water treatment plant](../../wiki/Water-treatment-plant): Recycles [sewage](../../wiki/Sewage) and other fluids, producing [mud](../../wiki/Mud-block). Good for the environment! 🌴
 * [Stone breaker](../../wiki/Stone-breaker): Allows building an automated cobblestone generator using oldschool flowing water and lava.
 * [Block breaker](../../wiki/Block-breaker): A more advanced stone breaker! Breaks almost any block right in front of the machine. Use it wisely.
+* [Fluid Outlet](../../wiki/Fluid-outlet): Places any fluid from its internal tank right in front of the machine.
 * [Color extractor](../../wiki/Color-extractor): Generates dye colors by processing blocks, e.g. recycling sand blocks to get yellow dye.
 * [Concrete mixer](../../wiki/Concrete-mixer): Forms concrete automatically when provided with concrete powder and water.
 
