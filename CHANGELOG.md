@@ -37,6 +37,7 @@
 ---
 
 ## MarvelousMachines-1.0.1-beta (01/01/1970)
+- [Updated CHANGELOG.md](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/9bb4b65ab1c5513210b0ed72a4a010ac44b428be) - @Jilocasin
 - [Added CHANGELOG.md](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/b6d3aef36022c8a59c5a7d8c3ca3802907fbb5db) - @Jilocasin
 - [Fixed block breaker JSONs](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/3d392395966d47fe343d502bead95c4b12fec9f0) - @Jilocasin
 - [Removed commented mud block](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/3d2768c48ba20b88cceec1ce536b91f82ad48e1b) - @Jilocasin
@@ -71,6 +72,7 @@
 ---
 
 ## MarvelousMachines-1.0.0-beta (01/01/1970)
+- [Updated CHANGELOG.md](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/9bb4b65ab1c5513210b0ed72a4a010ac44b428be) - @Jilocasin
 - [Added CHANGELOG.md](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/b6d3aef36022c8a59c5a7d8c3ca3802907fbb5db) - @Jilocasin
 - [Fixed block breaker JSONs](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/3d392395966d47fe343d502bead95c4b12fec9f0) - @Jilocasin
 - [Removed commented mud block](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/3d2768c48ba20b88cceec1ce536b91f82ad48e1b) - @Jilocasin
