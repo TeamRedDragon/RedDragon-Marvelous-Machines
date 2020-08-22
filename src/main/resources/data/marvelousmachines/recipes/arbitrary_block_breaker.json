@@ -16,13 +16,13 @@
 			"item": "techreborn:advanced_circuit"
 		},
 		"P": {
-			"item": "marvelousmachines:stone_breaker_block"
+			"item": "marvelousmachines:stone_breaker"
 		},
 		"M": {
 			"item": "techreborn:advanced_machine_frame"
 		}
 	},
 	"result": {
-		"item": "marvelousmachines:block_braker"
+		"item": "marvelousmachines:arbitrary_block_breaker"
 	}
 }

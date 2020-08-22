@@ -6,7 +6,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "marvelousmachines:block_breaker"
+          "name": "marvelousmachines:arbitrary_block_breaker"
         }
       ],
       "conditions": [
