@@ -34,6 +34,8 @@ Marvelous Machines has no mod dependencies you need to install. Tech Reborn is a
 
 Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check [Installing Fabric](https://fabricmc.net/wiki/install) for more details.
 
+While not required, we highly recommend using [Roughly Enough Items](https://www.curseforge.com/minecraft/mc-mods/roughly-enough-items) to always have all machine recipes at your fingertips.
+
 # Installation
 
 Download a matching [release build](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/releases) for your Minecraft version and drop the `reddragon-marvelousmachines.jar` file into your Minecraft `mods` folder.
