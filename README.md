@@ -43,7 +43,9 @@ While not required, we highly recommend using [Roughly Enough Items](https://www
 
 # Installation
 
-Simply download a [release build](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/releases) and drop the `reddragon-marvelousmachines.jar` file into your Minecraft `mods` folder.
+Using CurseForge you can quickly [Install](https://www.curseforge.com/minecraft/mc-mods/marvelous-machines/files) this mod. Make sure to download the correct version for your Minecraft version.
+
+You can also download a [release build](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/releases) from GitHub and drop the `reddragon-marvelousmachines.jar` file into your Minecraft `mods` folder.
 
 # Disclaimer
 
