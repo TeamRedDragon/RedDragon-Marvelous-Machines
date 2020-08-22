@@ -31,7 +31,9 @@ Feel free to check our companion mods that are designed to work closely together
 * **RedDragon Marvelous Machines**
 
 # Dependencies
-Marvelous Machines has no mod dependencies you need to install. Tech Reborn is already bundled in every release.
+Marvelous Machines currently only supports Minecraft **1.16.1**
+
+There are no additional mod dependencies you need to install. Tech Reborn is already bundled in every release.
 
 Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check [Installing Fabric](https://fabricmc.net/wiki/install) for more details.
 
@@ -39,7 +41,7 @@ While not required, we highly recommend using [Roughly Enough Items](https://www
 
 # Installation
 
-Download a matching [release build](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/releases) for your Minecraft version and drop the `reddragon-marvelousmachines.jar` file into your Minecraft `mods` folder.
+Simply download a [release build](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/releases) and drop the `reddragon-marvelousmachines.jar` file into your Minecraft `mods` folder.
 
 # Disclaimer
 
