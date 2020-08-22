@@ -30,7 +30,7 @@ Feel free to check our companion mods that are designed to work closely together
 * **RedDragon Marvelous Machines**
 
 # Dependencies
-Marvelous Machines has no mod dependencies you need to install. Tech Reborn is alreeady bundled with every release.
+Marvelous Machines has no mod dependencies you need to install. Tech Reborn is already bundled in every release.
 
 Keep in mind that this mod does require the [Fabric mod loader](https://fabricmc.net/use/). Please check [Installing Fabric](https://fabricmc.net/wiki/install) for more details.
 
