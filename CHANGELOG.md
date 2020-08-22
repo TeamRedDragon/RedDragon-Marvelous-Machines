@@ -1,6 +1,6 @@
 # Changelog
 
-## 1.0.1-beta (22/08/2020)
+## 1.0.1-beta-mc1.16.1 (22/08/2020)
 - [Fixed block breaker JSONs](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/3d392395966d47fe343d502bead95c4b12fec9f0) - @Jilocasin
 - [Removed commented mud block](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/3d2768c48ba20b88cceec1ce536b91f82ad48e1b) - @Jilocasin
 - [Added arbitrary block breaker, machine GUI reworked, TechReborn](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/450f7cb5cf67bca5b1b94440525eafcc4a82cb8f) - @Jilocasin
@@ -11,7 +11,7 @@
 
 ---
 
-## 1.0.0-beta (19/08/2020)
+## 1.0.0-beta-mc1.16.1 (19/08/2020)
 - [Fixed tag usage in log breaker and tree cutter](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/d0c9d0ac5b5d9ed9d98fd7fd6568f8bfa438943f) - @Jilocasin
 - [Fixed UI layout issue](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/e059570df3023b46479805f2a13b4267534aa45b) - @Jilocasin
 - [Fixed crashes when used in a server environment](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/a2d9cc7aef0d1075ad79cecc59dd7a27fae062d5) - @Jilocasin
