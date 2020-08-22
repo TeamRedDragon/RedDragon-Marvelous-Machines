@@ -28,7 +28,7 @@
 		"fabric": "*",
 		"minecraft": "1.16.x",
 		"techreborn": ">=3.4.5",
-		"reddragonapi": "1.0.0"
+		"reddragonapi": "1.0.1"
 	},
 	"suggests": {
 		"flamingo": "*"
