@@ -4,9 +4,9 @@ import net.minecraft.client.util.math.MatrixStack;
 import net.minecraft.entity.player.PlayerEntity;
 import reborncore.client.gui.builder.GuiBase;
 import reddragon.marvelousmachines.content.machines.AbstractMachineBlockEntity;
-import reddragon.marvelousmachines.content.machines.blockbreaker.BlockBreakerGui;
+import reddragon.marvelousmachines.content.machines.blockbreaker.AbstractBlockBreakerGui;
 
-public class ArbitraryBlockBreakerGui extends BlockBreakerGui {
+public class ArbitraryBlockBreakerGui extends AbstractBlockBreakerGui {
 
 	public ArbitraryBlockBreakerGui(final int syncID, final PlayerEntity player, final AbstractMachineBlockEntity blockEntity) {
 		super(syncID, player, blockEntity);

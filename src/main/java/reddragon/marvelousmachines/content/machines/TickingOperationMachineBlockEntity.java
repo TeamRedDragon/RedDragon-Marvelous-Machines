@@ -69,7 +69,7 @@ public abstract class TickingOperationMachineBlockEntity extends AbstractMachine
 				useEnergy(energyPerTick);
 				completedTicks = (completedTicks + 1) % getUpgradedTicksPerOperation();
 
-				if (completedTicks == 0 && !world.isClient) {
+				if (completedTicks == 0) {
 					performOperation();
 				}
 			} else {

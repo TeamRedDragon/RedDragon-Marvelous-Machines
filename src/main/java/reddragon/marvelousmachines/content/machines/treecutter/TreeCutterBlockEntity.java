@@ -226,6 +226,10 @@ public class TreeCutterBlockEntity extends TickingOperationMachineBlockEntity {
 	 */
 	@Override
 	protected void performOperation() {
+		if (world.isClient) {
+			return;
+		}
+
 		if (isBlockedByOutputInventory) {
 			return;
 		}

@@ -23,6 +23,8 @@ import reddragon.marvelousmachines.content.machines.blockbreaker.log.LogBreakerB
 import reddragon.marvelousmachines.content.machines.blockbreaker.log.LogBreakerGui;
 import reddragon.marvelousmachines.content.machines.blockbreaker.stone.StoneBreakerBlockEntity;
 import reddragon.marvelousmachines.content.machines.blockbreaker.stone.StoneBreakerGui;
+import reddragon.marvelousmachines.content.machines.planter.PlanterBlockEntity;
+import reddragon.marvelousmachines.content.machines.planter.PlanterGui;
 import reddragon.marvelousmachines.content.machines.treecutter.TreeCutterBlockEntity;
 import reddragon.marvelousmachines.content.machines.treecutter.TreeCutterGui;
 import reddragon.marvelousmachines.gui.AbstractGui;
@@ -38,7 +40,8 @@ public enum MarvelousMachinesMachine implements BlockHolder {
 	STONE_BREAKER(GenericMachineBlock::new, StoneBreakerBlockEntity::new, () -> () -> StoneBreakerGui::new),
 	LOG_BREAKER(GenericMachineBlock::new, LogBreakerBlockEntity::new, () -> () -> LogBreakerGui::new),
 	ARBITRARY_BLOCK_BREAKER(GenericMachineBlock::new, ArbitraryBlockBreakerBlockEntity::new, () -> () -> ArbitraryBlockBreakerGui::new),
-	TREE_CUTTER(GenericMachineBlock::new, TreeCutterBlockEntity::new, () -> () -> TreeCutterGui::new);
+	TREE_CUTTER(GenericMachineBlock::new, TreeCutterBlockEntity::new, () -> () -> TreeCutterGui::new),
+	PLANTER(GenericMachineBlock::new, PlanterBlockEntity::new, () -> () -> PlanterGui::new);
 
 	private GenericMachineBlock block;
 

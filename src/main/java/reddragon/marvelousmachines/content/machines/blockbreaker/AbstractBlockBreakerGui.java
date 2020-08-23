@@ -11,19 +11,15 @@ import net.minecraft.text.LiteralText;
 import net.minecraft.text.Text;
 import net.minecraft.util.Identifier;
 import reborncore.client.gui.builder.GuiBase;
-import reborncore.client.screen.builder.BuiltScreenHandler;
 import reborncore.common.util.StringUtils;
 import reddragon.marvelousmachines.content.machines.AbstractMachineBlockEntity;
+import reddragon.marvelousmachines.content.machines.AbstractMachineGui;
 
-public abstract class BlockBreakerGui extends GuiBase<BuiltScreenHandler> {
+public abstract class AbstractBlockBreakerGui extends AbstractMachineGui<AbstractBlockBreakerBlockEntity> {
+	private static final Identifier GUI_TEXTURE_SHEET = new Identifier("marvelousmachines", "textures/gui/guielements.png");
 
-	public static final Identifier guiTextureSheet = new Identifier("marvelousmachines", "textures/gui/guielements.png");
-
-	protected final AbstractBlockBreakerBlockEntity blockEntity;
-
-	public BlockBreakerGui(final int syncID, final PlayerEntity player, final AbstractMachineBlockEntity blockEntity) {
-		super(player, blockEntity, blockEntity.createScreenHandler(syncID, player));
-		this.blockEntity = (AbstractBlockBreakerBlockEntity) blockEntity;
+	public AbstractBlockBreakerGui(final int syncID, final PlayerEntity player, final AbstractMachineBlockEntity blockEntity) {
+		super(syncID, player, blockEntity);
 	}
 
 	@Override
@@ -77,7 +73,7 @@ public abstract class BlockBreakerGui extends GuiBase<BuiltScreenHandler> {
 			animationIndex = 0;
 		}
 
-		getMinecraft().getTextureManager().bindTexture(guiTextureSheet);
+		getMinecraft().getTextureManager().bindTexture(GUI_TEXTURE_SHEET);
 		drawTexture(matrixStack, x, y, textureX + textureW * animationIndex, textureY, textureW, textureH);
 
 		if (isPointInRect(x, y, textureW, textureH, mouseX, mouseY)) {

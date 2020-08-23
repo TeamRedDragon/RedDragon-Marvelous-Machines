@@ -103,6 +103,10 @@ public abstract class AbstractBlockBreakerBlockEntity extends TickingOperationMa
 
 	@Override
 	protected void performOperation() {
+		if (world.isClient) {
+			return;
+		}
+
 		final BlockPos targetBlockPos = getBlockPosInFront();
 
 		if (!currentTickDrop.isEmpty() && couldInsertToOutputInventory(currentTickDrop)) {
