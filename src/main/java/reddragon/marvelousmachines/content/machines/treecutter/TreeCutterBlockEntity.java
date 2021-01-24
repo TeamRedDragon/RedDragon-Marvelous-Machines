@@ -186,7 +186,7 @@ public class TreeCutterBlockEntity extends TickingOperationMachineBlockEntity {
 
 		if (!world.isClient && world.getTime() % 20 == 0) {
 			if (!inventory.getStack(BUCKET_INPUT_SLOT).isEmpty()) {
-				FluidUtils.fillContainers(sewageTank, inventory, BUCKET_INPUT_SLOT, BUCKET_OUTPUT_SLOT, sewageTank.getFluid());
+				FluidUtils.fillContainers((Tank)sewageTank, (Inventory)inventory, BUCKET_INPUT_SLOT, BUCKET_OUTPUT_SLOT);
 			}
 
 			// Required to keep items, fluids and entity properties (like the list of

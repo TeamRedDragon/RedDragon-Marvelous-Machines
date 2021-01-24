@@ -6,7 +6,6 @@ import java.util.function.Supplier;
 import net.minecraft.block.Block;
 import net.minecraft.block.entity.BlockEntity;
 import net.minecraft.block.entity.BlockEntityType;
-import net.minecraft.item.BlockItem;
 import net.minecraft.item.Item;
 import net.minecraft.util.Identifier;
 import net.minecraft.util.registry.Registry;
@@ -86,8 +85,8 @@ public enum MarvelousMachinesMachine implements BlockHolder {
 
 	public void register() {
 		RebornRegistry.registerBlock(
-				block,
-				new BlockItem(getBlock(), new Item.Settings().group(MarvelousMachinesMod.ITEMGROUP)),
+				getBlock(),
+				new Item.Settings().group(MarvelousMachinesMod.ITEMGROUP),
 				buildIdentifier());
 
 		final BlockEntityType<?> entityType = BlockEntityType.Builder

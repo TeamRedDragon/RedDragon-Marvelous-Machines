@@ -33,7 +33,7 @@ public class PlanterGui extends AbstractMachineGui<PlanterBlockEntity> {
 		final GuiBase.Layer layer = GuiBase.Layer.FOREGROUND;
 
 		builder.drawMultiEnergyBar(matrixStack, this, 9, 19, (int) blockEntity.getEnergy(),
-				(int) blockEntity.getMaxPower(), mouseX, mouseY, 0, layer);
+				(int) blockEntity.getMaxStoredPower(), mouseX, mouseY, 0, layer);
 
 	}
 }

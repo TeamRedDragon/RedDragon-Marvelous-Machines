@@ -39,7 +39,7 @@ public abstract class AbstractBlockBreakerGui extends AbstractMachineGui<Abstrac
 		super.drawForeground(matrixStack, mouseX, mouseY);
 
 		builder.drawMultiEnergyBar(matrixStack, this, 9, 19, (int) blockEntity.getEnergy(),
-				(int) blockEntity.getMaxPower(), mouseX, mouseY, 0, GuiBase.Layer.FOREGROUND);
+				(int) blockEntity.getMaxStoredPower(), mouseX, mouseY, 0, GuiBase.Layer.FOREGROUND);
 
 	}
 
