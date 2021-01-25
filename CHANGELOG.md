@@ -1,5 +1,18 @@
 # Changelog
 
+## 1.0.3-beta-mc1.16.4 (25/01/2021)
+- [Added "fabric": ">=0.28.3+1.16" mod dependency](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/fd16dc1f84fe2c8745cc8fd712f5d2030ec6a33c) - @Jilocasin
+- [Ported to >=1.16.4 / Reborn Tech 3.7.3, also fixed a few bugs](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/fb466b4107b61d12b4284cb23e5500246f0b0e51) - @josilo
+- [Added planter machine](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/f5831e4a35a45d842600e9afec990c3485f5bbf4) - @Jilocasin
+- [Added RandomPicker helper](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/7be6189097a920dee5ee77619cdee053ba384a10) - @Jilocasin
+- [Changed version to 1.0.2 using API 1.0.1](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/9039832df2a4d52b4981119d3085b37b26475539) - @Jilocasin
+- [Updated CHANGELOG.md](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/031797d51a1809c250303cfa200fbdf4d3be8342) - @Jilocasin
+- [Updated CHANGELOG.md](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/8908bd9070debeb159986991fae5cede4241ae4a) - @Jilocasin
+- [Updated CHANGELOG.md](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/4dcf101cf05eca29036a96694b652379246bdcc3) - @Jilocasin
+- [Updated CHANGELOG.md](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/9bb4b65ab1c5513210b0ed72a4a010ac44b428be) - @Jilocasin
+
+---
+
 ## 1.0.1-beta-mc1.16.1 (22/08/2020)
 - [Fixed block breaker JSONs](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/3d392395966d47fe343d502bead95c4b12fec9f0) - @Jilocasin
 - [Removed commented mud block](https://github.com/TeamRedDragon/RedDragon-Marvelous-Machines/commit/3d2768c48ba20b88cceec1ce536b91f82ad48e1b) - @Jilocasin
