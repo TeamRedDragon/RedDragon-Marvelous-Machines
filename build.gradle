@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '0.4-SNAPSHOT'
+	id 'fabric-loom' version '0.5-SNAPSHOT'
 	id 'maven-publish'
 }
 
@@ -19,11 +19,11 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}"
 
-	def redDragonApiVersion = 'reddragon:RedDragon-API:1.0.1'
+	def redDragonApiVersion = 'reddragon:RedDragon-API:1.0.2'
 	modApi redDragonApiVersion
     include redDragonApiVersion
     
-	def techRebornVersion = 'TechReborn:TechReborn-1.16:3.4.5+build.88'
+	def techRebornVersion = 'TechReborn:TechReborn-1.16:3.7.3+build.192'
 	modApi (techRebornVersion) {
 		exclude group: "net.fabricmc.fabric-api"
 	}

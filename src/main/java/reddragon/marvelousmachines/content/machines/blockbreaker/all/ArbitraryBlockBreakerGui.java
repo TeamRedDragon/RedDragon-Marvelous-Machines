@@ -14,8 +14,7 @@ public class ArbitraryBlockBreakerGui extends AbstractBlockBreakerGui {
 
 	@Override
 	protected void drawForeground(final MatrixStack matrixStack, final int mouseX, final int mouseY) {
-		super.drawForeground(matrixStack, mouseX, mouseY);
-
 		drawDrillHead(matrixStack, 80, 40, mouseX, mouseY, GuiBase.Layer.FOREGROUND);
+		super.drawForeground(matrixStack, mouseX, mouseY);
 	}
 }

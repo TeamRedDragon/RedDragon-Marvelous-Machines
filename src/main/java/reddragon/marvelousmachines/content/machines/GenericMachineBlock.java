@@ -1,7 +1,6 @@
 package reddragon.marvelousmachines.content.machines;
 
 import net.fabricmc.fabric.api.object.builder.v1.block.FabricBlockSettings;
-import net.minecraft.block.BlockEntityProvider;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Material;
 import net.minecraft.block.entity.BlockEntity;
@@ -18,7 +17,7 @@ import reddragon.marvelousmachines.content.MarvelousMachinesMachine;
  * The orientable block is initialized as {@link Material.METAL} with a strength
  * of 2.
  */
-public class GenericMachineBlock extends BlockMachineBase implements BlockEntityProvider {
+public class GenericMachineBlock extends BlockMachineBase {
 
 	private final MarvelousMachinesMachine machineType;
 

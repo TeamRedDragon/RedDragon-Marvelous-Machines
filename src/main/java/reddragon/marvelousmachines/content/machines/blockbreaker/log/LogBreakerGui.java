@@ -19,8 +19,7 @@ public class LogBreakerGui extends AbstractBlockBreakerGui {
 
 	@Override
 	protected void drawForeground(final MatrixStack matrixStack, final int mouseX, final int mouseY) {
-		super.drawForeground(matrixStack, mouseX, mouseY);
-
 		drawLogSawWheel(matrixStack, 80, 40, mouseX, mouseY, GuiBase.Layer.FOREGROUND);
+		super.drawForeground(matrixStack, mouseX, mouseY);
 	}
 }

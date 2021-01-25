@@ -44,7 +44,7 @@ public class TreeCutterGui extends AbstractMachineGui<TreeCutterBlockEntity> {
 				blockEntity.getTank().isEmpty(), layer);
 
 		builder.drawMultiEnergyBar(matrixStack, this, 9, 19, (int) blockEntity.getEnergy(),
-				(int) blockEntity.getMaxPower(), mouseX, mouseY, 0, layer);
+				(int) blockEntity.getMaxStoredPower(), mouseX, mouseY, 0, layer);
 
 	}
 }
