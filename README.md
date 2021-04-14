@@ -34,7 +34,7 @@ Feel free to check our companion mods that are designed to work closely together
 * **RedDragon Marvelous Machines**
 
 # Dependencies
-Marvelous Machines is currently running on Minecraft **1.16**. Please make sure to use the correct mod for your Minecraft version.
+Marvelous Machines is available for Minecraft **1.16**. Please make sure to use the correct mod for your Minecraft version.
 
 There are **no additional mod dependencies** you need to install. Tech Reborn is already bundled in every release.
 
